@@ -1,10 +1,14 @@
 # ATTINY402_Sounds_Player_and_Controller
-This is a new AVR ATTINY 402/202series Sounds Player w/Piezo mic input and Motor controller for toy gadgets PCBs replacemnt
+This is a new AVR ATTINY 402/202 series Sounds Player w/Piezo mic input and Motor controller  
+for toy gadgets PCBs replacement or a amusement
 # TINY202_IR_REMOTE_ISR for ATMEL STUDIO 7.0
-<img src="https://github.com/todopapa/TINY202_IR_REMOTE_ISR/assets/16860878/7a59901e-49d1-468d-9323-dc31d36176b7" width="480">
+![IMG_1175](https://github.com/user-attachments/assets/67f2f646-dc5e-4c46-ae4f-5d6ad38f57b6)
+
+<img src="https://github.com/user-attachments/assets/67f2f646-dc5e-4c46-ae4f-5d6ad38f57b6" width="480">
 <!-- ![TINY202_IR_REMOTE 2024-05-02 233458](https://github.com/todopapa/TINY202_IR_REMOTE_ISR/assets/16860878/7a59901e-49d1-468d-9323-dc31d36176b7)　-->
 
-## はじめに
+## はじめに![IMG_1175](https://github.com/user-attachments/assets/d4158bae-df33-4d3c-89cb-68cdb84f6e9c)
+
 ### TB-B-GONEをベースに汎用リモコンを作る　　
 前回 TV-B-GONE V1.2のファームウェアをATMEL STUDIO7.0に移植しました。  
 今回は、下記の内容を実装します。  
