@@ -2,7 +2,6 @@
 This is a new AVR ATTINY 402/202 series Sounds Player w/Piezo mic input and Motor controller  
 for toy gadgets PCBs replacement or a amusement
 # TINY202_IR_REMOTE_ISR for ATMEL STUDIO 7.0
-![IMG_1175](https://github.com/user-attachments/assets/67f2f646-dc5e-4c46-ae4f-5d6ad38f57b6)
 
 <img src="https://github.com/user-attachments/assets/67f2f646-dc5e-4c46-ae4f-5d6ad38f57b6" width="480">
 <!-- ![TINY202_IR_REMOTE 2024-05-02 233458](https://github.com/todopapa/TINY202_IR_REMOTE_ISR/assets/16860878/7a59901e-49d1-468d-9323-dc31d36176b7)　-->
