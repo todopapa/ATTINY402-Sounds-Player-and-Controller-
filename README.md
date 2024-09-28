@@ -9,8 +9,8 @@ for toy gadgets PCBs replacement or a amusement
 ### つつじが丘おもちゃ病院 大泉さんのtinyAVRプロジェクト　　
 前回 TV-B-GONE V1.2のファームウェアをATMEL STUDIO7.0に移植しました。  
 今回は、下記の内容を実装します。  
-[ｔｉｎｙＡＶＲ電子オルゴールVer1_2（ｔｉｎｙ４０２をサポート）] (http://tutujith.blog.fc2.com/blog-entry-741.html)
-
+[ｔｉｎｙＡＶＲ電子オルゴールVer1_2（ｔｉｎｙ４０２をサポート）](http://tutujith.blog.fc2.com/blog-entry-741.html)
+[タイトル](URL)　
 1.CPUをATTINY85から、ATTINY202に移植する。  
 2.TVの電源ON/OFF制御だけでなく、汎用のIRリモコンとして使用できるようにする。  
 3.そのためにスイッチを３個つけて、ピンチェンジ割り込みを使って３種類の制御ができるようにする。  
