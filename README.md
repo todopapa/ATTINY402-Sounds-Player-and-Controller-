@@ -6,7 +6,7 @@ for toy gadgets PCBs replacement or a amusement
 <!-- ![TINY202_IR_REMOTE 2024-05-02 233458](https://github.com/todopapa/TINY202_IR_REMOTE_ISR/assets/16860878/7a59901e-49d1-468d-9323-dc31d36176b7)　-->
 
 ## はじめに
-### つつじが丘おもちゃ病院 大泉さんのtinyAVRプロジェクト　　
+### つつじが丘おもちゃ病院 大泉さんのtinyAVRオルゴール基板プロジェクト　　
 [名張市つつじが丘おもちゃ病院](http://tutujith.blog.fc2.com/)では、故障したおもちゃの修理用に、換装用のマイコン基板とソフトを開発されています。 
 
 以下、大泉さんの開発者コメントです。  
