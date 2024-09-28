@@ -1,4 +1,4 @@
-# ATTINY402_Sounds_Player for toy repair
+# ATTINY402_Sounds_Player for toy PCB repair
 This is a new AVR ATTINY 402/202 series Sounds Player w/Piezo mic input and Motor controller  
 for toy gadgets PCBs replacement or a amusement
 
@@ -6,9 +6,10 @@ for toy gadgets PCBs replacement or a amusement
 <!-- ![TINY202_IR_REMOTE 2024-05-02 233458](https://github.com/todopapa/TINY202_IR_REMOTE_ISR/assets/16860878/7a59901e-49d1-468d-9323-dc31d36176b7)　-->
 
 ## はじめに
-### TB-B-GONEをベースに汎用リモコンを作る　　
+### つつじが丘おもちゃ病院 大泉さんのtinyAVRプロジェクト　　
 前回 TV-B-GONE V1.2のファームウェアをATMEL STUDIO7.0に移植しました。  
 今回は、下記の内容を実装します。  
+[ｔｉｎｙＡＶＲ電子オルゴールVer1_2（ｔｉｎｙ４０２をサポート）] (http://tutujith.blog.fc2.com/blog-entry-741.html)
 
 1.CPUをATTINY85から、ATTINY202に移植する。  
 2.TVの電源ON/OFF制御だけでなく、汎用のIRリモコンとして使用できるようにする。  
