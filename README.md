@@ -49,17 +49,20 @@ for toy gadgets PCBs replacement or a amusement
 5.基板の大きさは35ｍｍｘ50ｍｍ（TINY1614版のV3は50ｍｍｘ60ｍｍ）、単三電池2個で3Ｖで動作することを想定
   動作時の電流は最大50~100ｍＡ、待機時は1uA以下（ピエゾアンプ実装時は3uA程度）  
 
-### ATTINY402 Sound Player基板の設計
+### ATTINY402 Sound Player基板の基本設計
 今回の基板のＣＰＵはATTINY402、音声データを入れるフラッシュメモリICはWinBondのW25Q64(64Mbit)を使います    
 フラッシュICとTINY402の間の接続図は下記になります    
 ・入力は、SW0 タクトスイッチ 1個をPA0に、ピエゾマイクのアンプ出力をPA2に入力し、2種の音声のトリガ入力にします   
 ・出力は、PA6をモータ駆動信号に、PA3を音声のPWM正相出力に設定します  
 ・フラッシュICは、/CSをPA1、CLKをPA2 (ピエゾ入力と併用）、DIをPA7、DOは10kΩを介してPA7を併用します  
- フラッシュICとの接続は、/CS、CLK、PA7ピンのMOSI/MISOを使った3線SPIになります  
-
- <img src="https://github.com/user-attachments/assets/80f917f6-643c-433e-b030-18f3d60e364e" width="480">    
+   フラッシュICとの接続は、/CS、CLK、PA7ピンのMOSI/MISOを使った3線SPIになります  
+・プログラムはPA0 UPDI端子をSW0タクトSWと併用します。あらかじめFUSEbitでUPDIからGPIOに変更します    
+　(プログラム時はHVP（高電圧)プログラマーが必要になります）   
+ 
+ <img src="https://github.com/user-attachments/assets/13a25016-7da2-4704-89ea-2c94c9342ec7" width="480">    
 
  
+
  TV-B-GONEはライセンスフリーで、Adafruit社が最初の[TV-BーGONEキット](https://www.adafruit.com/product/73)を出したのは2005年？前後で、  
  8PINのAVRマイコン ATTINY85 CPUを使って制御しています。  
  ハードウェアとファームウェアは当初のV1.0から、いまはV1.2に進化しています。  
