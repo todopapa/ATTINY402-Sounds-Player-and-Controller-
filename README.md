@@ -69,11 +69,13 @@ for toy gadgets PCBs replacement or a amusement
  TINY402のピンを使ったので、PWM正相のみを出力して一般的なAB級アンプICを使った回路にしました。  
  高周波のPWM信号をそのまま入れるとICを壊す恐れがありますので、アンプの入力にCRローパスフィルタと音量調整のため   
  半固定ボリュームを入れました。  
+ AB級アンプとしては、ISSIのIS31AP4881Aというものを使いました。
+ 一般的なTI LM4891MXというICもあります。どちらもSOP8でピン配も同じなのですが、Sleepさせる論理が逆なので要注意です。  
+ IS31AP4881Aの場合は、SDBにモータ駆動信号 MOT_ONを接続します。LM4891MXを実装する場合は/CS信号を接続します。
 
  <img src="https://github.com/user-attachments/assets/844ad3c4-5525-4207-8fd6-67c08ce1b76e" width="480">    
 
-
-**Adafruit TV-BーGONE V1.1　回路図**  
+**Sound Player アンプ部**  
 
 ## **TINY202_IR_REMOTE_ISR1**
 は、AVRマイコン ATTNY202 のファームウェアです。 　 
