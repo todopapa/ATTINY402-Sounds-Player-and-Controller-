@@ -105,8 +105,8 @@ for toy gadgets PCBs replacement or a amusement
 * ATTINY402（202） 8pin SOP対応  　
 * ATMEL STUDIO（現Microchip Studio）対応  　
 * 書き込みは UPDIを使用するが、PA0 UPDIピンをGPIOで使用するためHVP対応のプログラマーが必要（下記を参考に）
-　　 [ATTINY202/402のFUSEビットをAVRDUDESSを使って書く方法](https://ameblo.jp/powpher/entry-12863906067.html)  　　
-　 UPDIを使用するがATMEL Studioはserial UPDIライタに対応していないので、AVR DUDESSを使ってオフラインで書き込みを行う　　  
+　　 [ATTINY202/402のFUSEビットをAVRDUDESSを使って書く方法](https://ameblo.jp/powpher/entry-12863906067.html)   
+  UPDIを使用するがATMEL Studioはserial UPDIライタに対応していないので、AVR DUDESSを使ってオフラインで書き込みを行う   　　  
 
 ## 回路図
 
