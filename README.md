@@ -99,15 +99,7 @@ for toy gadgets PCBs replacement or a amusement
  
 <img src="https://github.com/user-attachments/assets/6ce74da2-f343-4ae3-ac8b-c14457e50024" width="180">    
 
-**Sound Player アンプ部**  
-
-## **orgel1_2_tinyAVR_240928**
-は、AVRマイコン ATTNY402 のSound Player基板制御用のファームウェアです。 　 
-* ATTINY402（202） 8pin SOP対応  　
-* ATMEL STUDIO（現Microchip Studio）対応  　
-* 書き込みは UPDIを使用するが、PA0 UPDIピンをGPIOで使用するためHVP対応のプログラマーが必要（下記を参考に）
-　　 [ATTINY202/402のFUSEビットをAVRDUDESSを使って書く方法](https://ameblo.jp/powpher/entry-12863906067.html)   
-  UPDIを使用するがATMEL Studioはserial UPDIライタに対応していないので、AVR DUDESSを使ってオフラインで書き込みを行う   　　  
+**Sound Player アンプ部**   　　  
 
 ## 回路図
 <img src="https://github.com/user-attachments/assets/d24ee328-6231-4893-ae8d-fd2b4a33f62f" width="640">   
@@ -133,6 +125,14 @@ Q1のコレクタに２つのIR LEDを並列に接続してパルス的に大電
 
 IR LEDには直列に10Ωの抵抗をいれてますが、実験的には無くてもOKの様です。  
 （Q1トランジスタのベース電流ｘhfeで流せるが実際はIR LEDの特性でリミットがかかる）    
+
+## **orgel1_2_tinyAVR_240928**
+は、AVRマイコン ATTNY402 のSound Player基板制御用のファームウェアです。 　 
+* ATTINY402（202） 8pin SOP対応  　
+* ATMEL STUDIO（現Microchip Studio）対応  　
+* 書き込みは UPDIを使用するが、PA0 UPDIピンをGPIOで使用するためHVP対応のプログラマーが必要（下記を参考に）
+　　 [ATTINY202/402のFUSEビットをAVRDUDESSを使って書く方法](https://ameblo.jp/powpher/entry-12863906067.html)   
+  UPDIを使用するがATMEL Studioはserial UPDIライタに対応していないので、AVR DUDESSを使ってオフラインで書き込みを行う
 
 ## ATMEL STUDIOプロジェクトファイル　　
 頭のTINY202_IR_REMOTE_ISR1.atsln がプロジェクトファイルです。TINY202_IR_REMOTE_ISR1フォルダ内には  
