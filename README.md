@@ -61,7 +61,7 @@ for toy gadgets PCBs replacement or a amusement
  
  <img src="https://github.com/user-attachments/assets/13a25016-7da2-4704-89ea-2c94c9342ec7" width="480">    
 
- 
+ PA3からの音声PWM信号は、16KHzの場合は  
 
  TV-B-GONEはライセンスフリーで、Adafruit社が最初の[TV-BーGONEキット](https://www.adafruit.com/product/73)を出したのは2005年？前後で、  
  8PINのAVRマイコン ATTINY85 CPUを使って制御しています。  
