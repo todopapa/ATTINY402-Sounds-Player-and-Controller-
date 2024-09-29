@@ -68,11 +68,11 @@ for toy gadgets PCBs replacement or a amusement
 
 ・出力は、PA6をモータ駆動信号に、PA3を音声のPWM正相出力に設定します  
 
-・フラッシュICは、/CSをPA1、CLKをPA2 (ピエゾ入力と併用）、DIをPA7、DOは10kΩを介してPA7を併用します  
-     フラッシュICとの接続は、/CS、CLK、PA7ピンのMOSI/MISOを使った3線SPIになります  
+・フラッシュICは、/CSをPA1、CLKをPA2 (ピエゾ入力と併用）、DIをPA7、DOは10kΩを介してPA7を併用します   
+   フラッシュICとの接続は、/CS、CLK、PA7ピンのMOSI/MISOを使った3線SPIになります  
    
 ・プログラムはPA0 UPDI端子をSW0タクトSWと併用します。あらかじめFUSEbitでUPDIからGPIOに変更します    
-　(プログラム時はHVP（高電圧)プログラマーが必要になります）   
+　  (プログラム時はHVP（高電圧)プログラマーが必要になります）   
  
  <img src="https://github.com/user-attachments/assets/13a25016-7da2-4704-89ea-2c94c9342ec7" width="480">    
 
