@@ -77,9 +77,9 @@ for toy gadgets PCBs replacement or a amusement
    Arduino Unoもファームを書き換え jtag2UPDIとして、ATTINY202の書き込み機としてつかえるようです。　　　  
 
 ## 回路図
-<img src="https://github.com/todopapa/TINY202_IR_REMOTE_ISR/assets/16860878/d0b8481c-817d-47d6-a535-f8ba9e405f51" width="360">   
 
-**トドお父さん版 TINY202_IR_REMOTE V1.1 for ATMEL STUDIO　回路図**
+<img src="https://github.com/user-attachments/assets/d24ee328-6231-4893-ae8d-fd2b4a33f62f" width="360">   
+**ATTINY402 Sound Player基板V2.1　回路図**
 
 回路はAdafruitのV1.1をベースにして、ATTINY85からATTINY202に変更しています。  
 
