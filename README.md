@@ -61,9 +61,16 @@ for toy gadgets PCBs replacement or a amusement
  
  <img src="https://github.com/user-attachments/assets/13a25016-7da2-4704-89ea-2c94c9342ec7" width="480">    
 
- PA3からの音声PWM信号は、16KHzの場合は約31uS周期になります。 16MHzクロックで496ステップにしているからです。  
- プログラムの中のorgel_conf.h に記述があります。
- #define PWM_STEP 496	//PWMｽﾃｯﾌﾟ数(PWM周期=496/16MHz=31us)
+ PA3からの音声PWM信号は、16KHzの場合は約31uS周期になります。 16MHzクロックで496ステップにしているからです。    
+ プログラムの中のorgel_conf.h に記述があります。  （31uS ≒ 32kHz）
+ #define PWM_STEP 496	//PWMｽﾃｯﾌﾟ数(PWM周期=496/16MHz=31us)  
+ 
+ 元の回路では、PWM正相出力と逆相出力をHブリッジICに入れてスピーカを駆動していますが、今回はモータ駆動するピンで   
+ TINY402のピンを使ったので、PWM正相のみを出力して一般的なAB級アンプICを使った回路にしました。  
+ 高周波のPWM信号をそのまま入れるとICを壊す恐れがありますので、アンプの入力にCRローパスフィルタと音量調整のため   
+ 半固定ボリュームを入れました。  
+
+ <img src="https://github.com/user-attachments/assets/844ad3c4-5525-4207-8fd6-67c08ce1b76e" width="480">    
 
 
 **Adafruit TV-BーGONE V1.1　回路図**  
