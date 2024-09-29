@@ -31,31 +31,34 @@ for toy gadgets PCBs replacement or a amusement
 [ｔｉｎｙＡＶＲ電子オルゴールVer1_2（ｔｉｎｙ４０２をサポート）](http://tutujith.blog.fc2.com/blog-entry-741.html)  
 
 この基板の概略仕様は下記になります。  
-1.new ATTINY CPUのうち、小型化のため8ピンとピンが少ないATTINY402を採用する。  
+1.new ATTINY CPUのうち、小型化のため8ピンとピンが少ないATTINY402を採用する　　
 
-2.ピンが少ないので、音楽再生を制御するSWは1個のみ。SWを押すたびにフラッシュメモリICの曲をラウンドロビンで順に再生する。  
+2.ピンが少ないので、音楽再生を制御するSWは1個のみ。SWを押すたびにフラッシュメモリICの曲をラウンドロビンで順に再生する  
 
-3.長押しで停止する。停止時はSleep待機に入り待機時の消費電流はは1uA以下になる。SWを押すと割り込みで起動する。   
+3.長押しで停止する。停止時はSleep待機に入り待機時の消費電流はは1uA以下になる。SWを押すと割り込みで起動する   
 
-4.piezoマイクに対応したファームを書き込むと、おもちゃを叩いたり、大きな音に反応しておもちゃが動く仕様となる。    
-  演奏中にLEDが点灯する信号を使って、おもちゃを動かす外部モータを駆動する回路も付けている。    
+4.piezoマイクに対応したファームを書き込むと、おもちゃを叩いたり、大きな音に反応しておもちゃが動く仕様となる    
+  演奏中にLEDが点灯する信号を使って、おもちゃを動かす外部モータを駆動する回路も付けている      
   
-5.トリガ起動がピエゾマイクの場合は、振動で次の曲に移動しないようにトリガ信号無効にする。停止時も4秒の待ち時間を設ける。 
+5.トリガ起動がピエゾマイクの場合は、振動で次の曲に移動しないようにトリガ信号無効にする。停止時も4秒の待ち時間を設ける   
 
 6.フラッシュメモリICに書き込んだ音声データを再生する以外に、マイコン内のメモリに書き込んだ音符データでオルゴールを    
   再生することもできる。TINY402はメモリが4kBしかなく、1曲程度しか記憶できない。数曲以上のオルゴールに対応するには    
-  14ピンで内部メモリが16kBのATTINY1614を使用する。 こちらは今回の基板では対応していない。（別の大サイズ基板で対応）
-5.基板の大きさは
+  14ピンで内部メモリが16kBのATTINY1614を使用する。 こちらは今回の基板では対応していない。（別の大サイズ基板で対応） 
+  
+5.基板の大きさは35ｍｍｘ50ｍｍ（TINY1614版のV3は50ｍｍｘ60ｍｍ）、単三電池2個で3Ｖで動作することを想定
+  動作時の電流は最大50~100ｍＡ、待機時は1uA以下（ピエゾアンプ実装時は3uA程度）  
 
 ### ATTINY402 Sound Player基板の設計
-最近のおもちゃは基板に黒いCOBのカスタムICを乗せて音を出したり演奏したり、動かしたりするものが多くなってます。
-このCOBは中身がブラックボックスのため、一旦壊れるとおもちゃの修理に手の出しようがなくて困っています。
-その対応策として、つつじが丘おもちゃ病院では、安価に購入できるPIC等のCPUを使った基板を作って入れ替えることを提案されています。
-TV-B-GONEはライセンスフリーで、Adafruit社が最初の[TV-BーGONEキット](https://www.adafruit.com/product/73)を出したのは2005年？前後で、  
-8PINのAVRマイコン ATTINY85 CPUを使って制御しています。  
-ハードウェアとファームウェアは当初のV1.0から、いまはV1.2に進化しています。  
-<img src="https://github.com/todopapa/TINY202_IR_REMOTE_ISR/assets/16860878/751ad074-005d-4b4e-a7a8-8ae2165690f8)" width="480">
-<!-- ![TV-B-GONE Adafruit schematics_2024-05-02 235112](https://github.com/todopapa/TINY202_IR_REMOTE_ISR/assets/16860878/751ad074-005d-4b4e-a7a8-8ae2165690f8)TV_B_GONE_1R1TV_B_GONE_1R1_AV_AV  -->
+今回の基板のＣＰＵはATTINY402、音声データを入れるフラッシュメモリICはWinBondのW25Q64(64Mbit)を使います。 
+
+ ![基本接続図 2024-09-29 124845](https://github.com/user-attachments/assets/80f917f6-643c-433e-b030-18f3d60e364e)
+ <img src="https://github.com/user-attachments/assets/80f917f6-643c-433e-b030-18f3d60e364e" width="480">
+ TV-B-GONEはライセンスフリーで、Adafruit社が最初の[TV-BーGONEキット](https://www.adafruit.com/product/73)を出したのは2005年？前後で、  
+ 8PINのAVRマイコン ATTINY85 CPUを使って制御しています。  
+ ハードウェアとファームウェアは当初のV1.0から、いまはV1.2に進化しています。  
+ <img src="https://github.com/todopapa/TINY202_IR_REMOTE_ISR/assets/16860878/751ad074-005d-4b4e-a7a8-8ae2165690f8)" width="480">
+ <!-- ![TV-B-GONE Adafruit schematics_2024-05-02 235112](https://github.com/todopapa/TINY202_IR_REMOTE_ISR/assets/16860878/751ad074-005d-4b4e-    a7a8-8ae2165690f8)TV_B_GONE_1R1TV_B_GONE_1R1_AV_AV  -->
 **Adafruit TV-BーGONE V1.1　回路図**  
 
 ## **TINY202_IR_REMOTE_ISR1**
