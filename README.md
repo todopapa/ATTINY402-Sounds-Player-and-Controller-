@@ -96,18 +96,17 @@ for toy gadgets PCBs replacement or a amusement
  圧電効果で、音や振動を拾って電圧に変換します。  
  そのピエゾアンプの元回路は下記になります。 自己バイアス回路で増幅率は100程度だと思います。  
  これに保護用のダイオードを付けて（落とすと高電圧でTRを壊す恐れあり）待機電流を減らすために 470k → 1M にします。
-<img src="https://github.com/user-attachments/assets/6ce74da2-f343-4ae3-ac8b-c14457e50024" width="200">    
-
+<img src="https://github.com/user-attachments/assets/6ce74da2-f343-4ae3-ac8b-c14457e50024" width="180">    
 
 **Sound Player アンプ部**  
 
-## **TINY202_IR_REMOTE_ISR1**
-は、AVRマイコン ATTNY202 のファームウェアです。 　 
-* ATTINY202 8pin DIP 対応  　
+## **orgel1_2_tinyAVR_240928**
+は、AVRマイコン ATTNY402 のSound Player基板制御用のファームウェアです。 　 
+* ATTINY402（202） 8pin SOP対応  　
 * ATMEL STUDIO（現Microchip Studio）対応  　
-* 書き込みは UPDIを使用する　　  　　
-* [Adafruit UPDI Friend]([https://www.instructables.com/How-to-Program-an-Attiny85-From-an-Arduino-Uno/](https://learn.adafruit.com/adafruit-updi-friend/overview))  　　
-   Arduino Unoもファームを書き換え jtag2UPDIとして、ATTINY202の書き込み機としてつかえるようです。　　　  
+* 書き込みは UPDIを使用するが、PA0 UPDIピンをGPIOで使用するためHVP対応のプログラマーが必要（下記を参考に）
+　　 [ATTINY202/402のFUSEビットをAVRDUDESSを使って書く方法](https://ameblo.jp/powpher/entry-12863906067.html)  　　
+　 UPDIを使用するがATMEL Studioはserial UPDIライタに対応していないので、AVR DUDESSを使ってオフラインで書き込みを行う　　  
 
 ## 回路図
 
