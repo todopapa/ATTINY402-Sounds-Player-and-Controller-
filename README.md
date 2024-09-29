@@ -62,7 +62,7 @@ for toy gadgets PCBs replacement or a amusement
  <img src="https://github.com/user-attachments/assets/13a25016-7da2-4704-89ea-2c94c9342ec7" width="480">    
 
  PA3からの音声PWM信号は、16KHzの場合は約31uS周期になります。 16MHzクロックで496ステップにしているからです。    
- プログラムの中のorgel_conf.h に記述があります。  （31uS ≒ 32kHz）
+ プログラムの中のorgel_conf.h に記述があります。  （31uS ≒ 32kHz）   
  #define PWM_STEP 496	//PWMｽﾃｯﾌﾟ数(PWM周期=496/16MHz=31us)  
  
  元の回路では、PWM正相出力と逆相出力をHブリッジICに入れてスピーカを駆動していますが、今回はモータ駆動するピンで   
