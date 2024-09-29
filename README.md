@@ -110,7 +110,7 @@ for toy gadgets PCBs replacement or a amusement
 
 ## 回路図
 
-<img src="https://github.com/user-attachments/assets/d24ee328-6231-4893-ae8d-fd2b4a33f62f" width="360">   
+<img src="https://github.com/user-attachments/assets/d24ee328-6231-4893-ae8d-fd2b4a33f62f" width="640">   
 **ATTINY402 Sound Player基板V2.1　回路図**
 
 回路はAdafruitのV1.1をベースにして、ATTINY85からATTINY202に変更しています。  
