@@ -96,7 +96,7 @@ for toy gadgets PCBs replacement or a amusement
  圧電効果で、音や振動を拾って電圧に変換します。  
  そのピエゾアンプの元回路は下記になります。 自己バイアス回路で増幅率は100程度だと思います。  
  これに保護用のダイオードを付けて（落とすと高電圧でTRを壊す恐れあり）待機電流を減らすために 470k → 1M にします。
-<img src="https://github.com/user-attachments/assets/6ce74da2-f343-4ae3-ac8b-c14457e50024" width="400">    
+<img src="https://github.com/user-attachments/assets/6ce74da2-f343-4ae3-ac8b-c14457e50024" width="150">    
 
 
 **Sound Player アンプ部**  
