@@ -1,0 +1,3 @@
+		vos_mac(0x000000,0x2ae280,16000)	//gingle_hade.wav
+		vos_mac(0x2ae280,0x0e2835,16000)	//Silent_Night_cover.wav
+		vos_mac(0x390ab5,0x1396e5,16000)	//morobito-cover-.wav
