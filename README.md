@@ -150,6 +150,40 @@ tiny402のﾎﾟｰﾄの割当て(3線SPI)
 6:(PA0)SW0入力/UPDIプログラム信号入出力
 7:(PA3)/(WO0)正相出力
 8:GND
+**プログラムではPWMに関し、**
+//PWMのﾎﾟｰﾄ定義
+#define	PWM_F_PORT	PORTA			//PWM正相のﾎﾟｰﾄ
+#define	PWM_F_BIT	3			//PWM正相のﾋﾞｯﾄ
+
+**3線SPIに関し、**   
+//SPIのﾎﾟｰﾄ定義
+#define	SPI_SOFT				//SPIをｿﾌﾄ実装する
+#define SPI_SCK_PORT	PORTA			//SPI_SCKのﾎﾟｰﾄ
+#define SPI_SCK_BIT	2			//SPI_SCKのﾋﾞｯﾄ
+#define SPI_MOSI_PORT	PORTA			//SPI_MOSIのﾎﾟｰﾄ
+#define SPI_MOSI_BIT	7			//SPI_MOSIのﾋﾞｯﾄ
+~
+#else					//3線SPIのとき
+#ifdef	SPI3					//3線SPIで接続する
+#define SPI_SS_PORT	PORTA			//SPI_SSのﾎﾟｰﾄ
+#define SPI_SS_BIT	1			//SPI_SSのﾋﾞｯﾄ
+#endif
+#define SPI_MISO_PORT	PORTA			//SPI_MISOのﾎﾟｰﾄ
+#define SPI_MISO_BIT	7			//SPI_MISOのﾋﾞｯﾄ
+
+**SW0の入力に関し**
+//ﾄﾘｶﾞ入力のﾎﾟｰﾄ定義
+#define	TRG_PORT	PORTA		//ﾄﾘｶﾞのﾎﾟｰﾄ
+#define	TRG_BIT		0			//ﾄﾘｶﾞのﾋﾞｯﾄ（PA0 UPDI)
+
+**モータ制御のポート追加に関し**
+//モータ制御追加　24/05/23　YM
+#if BTL==0				//ｼﾝｸﾞﾙ出力のとき
+//ﾓｰﾀｰ制御のﾎﾟｰﾄ定義
+#define	MTR_PORT	PORTA			//ﾓｰﾀｰのﾎﾟｰﾄ
+#define	MTR_BIT		6			//ﾓｰﾀｰのﾋﾞｯﾄ PA1→PA6
+で定義を変更しています。
+
 
 ## 使い方
 今回はPanasonicの天井灯のリモコンを制御します。  
