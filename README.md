@@ -193,6 +193,34 @@ tiny402のﾎﾟｰﾄの割当て(3線SPI)
 ```
 で定義を変更しています。
 
+**音声再生時のインデックス**  
+フラッシュメモリに書き込んだ曲のインデックスは、main.cに記述する必要があります。    
+350行付近の不要な曲のインデックスをコメントアウトして、vos_mac.txtを貼り付けます。  
+（今回はクリスマスソング）  
+```
+#if	VOICE_S>0
+//==============================================
+//音声ﾃﾞｰﾀ(SPIﾌﾗｯｼｭ)のｲﾝﾃﾞｯｸｽ
+//==============================================
+static const struct VOICES_HDR voiceS_idx[]=
+{
+	//voice_ToyStory\W25Q16_12ksps8bit.hexを使う
+//	vos_mac(0x000000,0x0afc83,12000)	//ToyStory_12ksps8bit
+/*　いちおうコメントアウトしておく
+	//｢ｷﾃｨﾐﾗｰﾅ｣の音声ﾃﾞｰﾀ(voice_Mirrorna\W25Q16.hex)を使う
+	vos_mac(0x000000,0x002401,8000)		//sharin.wav
+	vos_mac(0x002401,0x004575,8000)		//kirakiraomeme.wav
+	vos_mac(0x006976,0x001956,8000)		//aidorumitai.wav
+	vos_mac(0x0082cc,0x002b18,8000)		//kyounooshare.wav
+	vos_mac(0x00ade4,0x001d61,8000)		//egaogasuteki.wav
+	vos_mac(0x00cb45,0x0033a5,8000)		//kirarin.wav
+*/
+//　クリスマスソング（フリー音源を使う 16kbps）
+vos_mac(0x000000,0x0e2835,16000)	//Silent_Night_cover.wav
+vos_mac(0x0e2835,0x2ae280,16000)	//gingle_hade.wav
+vos_mac(0x390ab5,0x1396e5,16000)	//morobito-cover-.wav
+};
+```
 
 ## 使い方
 今回はPanasonicの天井灯のリモコンを制御します。  
@@ -213,6 +241,12 @@ tiny402のﾎﾟｰﾄの割当て(3線SPI)
 ・単発でよい場合は、コードの226行目、252行目をコメントアウトしてください。  
 　　226　// while ((~PORTA.IN & SW0_PIN) | (~PORTA.IN & SW1_PIN) | (~PORTA.IN & SW2_PIN)){ //while SW0 or SW1 or SW2 is pressed then continue IR LED flashing  
 　　252 //	}  
+
+
+
+
+
+
 
 ## リモコンコード
 <img src="https://github.com/todopapa/TINY202_IR_REMOTE_ISR/assets/16860878/f1b21625-a868-4491-9a7b-8a4c05b9795c" width="360">   
