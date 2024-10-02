@@ -139,7 +139,7 @@ orgel1_2_tinyAVR_240928フォルダの下のorgel_SW_402を開いて、頭のorg
 以上、変更が必要になる部分、重要な部分のみ説明しています。
 
 ###プログラムの説明と変更点
-### main.c の変更点 ポート割り当て変更と曲インデックス変更
+### main.c の変更点 （ポート割当て変更と曲インデックス変更）
 **ATTINY402のポート割り当て**
 ```
 tiny402のﾎﾟｰﾄの割当て(3線SPI)
@@ -221,7 +221,8 @@ vos_mac(0x0e2835,0x2ae280,16000)	//gingle_hade.wav
 vos_mac(0x390ab5,0x1396e5,16000)	//morobito-cover-.wav
 };
 ```
-### orgel_conf.h の変更点 （音声S再生を選択する）
+### orgel_conf.h の変更点 （PWMシングル出力と外部フラッシュIC音声再生を選択）
+#define	BTL 		0	を選択します。（PWMシングル出力（正出力のみ））    
 #define	VOICE_S		1	を選択します。（他は0にする）   
 ```
 //==============================================
@@ -268,9 +269,21 @@ vos_mac(0x390ab5,0x1396e5,16000)	//morobito-cover-.wav
 　　　   					//　(0のときはKB演奏機能を実装しない)
 ```
 
-
-
-
+### apl_SW.c の変更点 （各機能の宣言 SW_ENコメントアウトを外す）  
+```
+//下記のｵﾌﾟｼｮﾝ設定を呼出し元で宣言しておくこと｡
+//#define	SLEEP_EN	//Sleep機能を実装するときに宣言する
+//#define	SHAUTO		//自動開始するときに宣言する
+//#define	KYOKU_RAND	//曲番号をﾗﾝﾀﾞﾏｲｽﾞするときに宣言する
+//#define	ONSEIN_RAND	//音声N番号をﾗﾝﾀﾞﾏｲｽﾞするときに宣言する
+//#define	ONSEII_RAND	//音声I番号をﾗﾝﾀﾞﾏｲｽﾞするときに宣言する
+//#define	ONSEIC_RAND	//音声C番号をﾗﾝﾀﾞﾏｲｽﾞするときに宣言する
+//#define	ONSEIS_RAND	//音声S番号をﾗﾝﾀﾞﾏｲｽﾞするときに宣言する
+#define		SW_EN		//SWを実装するときに宣言する
+//#define	TRG_EN	    //TRIGGER機能(piezo入力)を実装するときに宣言する
+//#define	CdS_EN		//CdSを実装するときに宣言する
+//#define	CVD_EN		//CVDを実装するときに宣言する
+```
 
 
 
