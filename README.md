@@ -124,14 +124,17 @@ J1～J5までXH、PHコネクタで設計してますが、J4 UPDIの3P ピン�
 　　 [ATTINY202/402のFUSEビットをAVRDUDESSを使って書く方法](https://ameblo.jp/powpher/entry-12863906067.html)   
   UPDIを使用するがATMEL Studioはserial UPDIライタに対応していないので、AVR DUDESSを使ってオフラインで書き込みを行う
 
-## ATMEL STUDIOプロジェクトファイル　　
-頭のTINY202_IR_REMOTE_ISR1.atsln がプロジェクトファイルです。TINY202_IR_REMOTE_ISR1フォルダ内には  
+## orgel_SW_402プロジェクトファイル　　
+orgel1_2_tinyAVR_240928フォルダの下のorgel_SW_402を開いて、頭のorgel_SW_402.atsln がプロジェクト  ファイルです。orgel_SW_402フォルダ内には、その階層の中に 
 * main.c : メインプログラム  
-* IRcodes.c : 元は北米/アジア仕向け 各社テレビのON/OFF 赤外線コードの構造体  
-  　　　　　　　→ 自分が使う装置の赤外線コードに書き換える,TINY202は容量が少ないのが　5～10くらいが入る  
-* util.c : デバッグ用ソフトUart (未使用）  
-* Debugフォルダ：生成したHEXファイル、ELFファイルが入る  
+* song_idx.s : 今回は使いませんが、オルゴールを実装するときに曲のインデックスが入ってます  
 
+  Dependencies内に入っているファイル（上の階層orgel1_2_tinyAVR_240928に入ってます）
+* orgel_conf.h : 各種設定値が入っています。音声再生とオルゴール再生もここで選択します   
+* apl_SW.c : 音声を起動するトリガーとなる、スイッチ、静電スイッチ、CDS等を選択します
+　獅子舞タイプの時は、apl_SISIMAI.c になり、ピエゾ素子をトリガに使う専用ソフトになります   
+* orgel.c: オルゴール・音声再生のメインエンジン部
+* 
 ## 使い方
 今回はPanasonicの天井灯のリモコンを制御します。  
 ・タクトSWを押すとリモコンコードの発信が始まります。  
