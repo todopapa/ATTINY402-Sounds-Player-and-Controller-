@@ -103,7 +103,7 @@ for toy gadgets PCBs replacement or a amusement
 
 **Sound Player アンプ部**   　　  
 
-## 回路図
+### 回路図
 <img src="https://github.com/user-attachments/assets/d24ee328-6231-4893-ae8d-fd2b4a33f62f" width="640">   
   
 **ATTINY402 Sound Player基板V2.1　回路図**
@@ -117,7 +117,7 @@ U3 フラッシュメモリIC W25Q64はDIPだと高いので、SOP8サイズを�
 J1～J5までXH、PHコネクタで設計してますが、J4 UPDIの3P ピンヘッダ以外は半田付けPADとして使用します。
    
 ## **ソフト説明**
-## **orgel1_2_tinyAVR_240928**
+### **orgel1_2_tinyAVR_240928**
 は、AVRマイコン ATTNY402 のSound Player基板制御用のファームウェアです。 　 
 * ATTINY402（202） 8pin SOP対応  　
 * ATMEL STUDIO（現Microchip Studio）対応  　
@@ -125,7 +125,7 @@ J1～J5までXH、PHコネクタで設計してますが、J4 UPDIの3P ピン�
 　　 [ATTINY202/402のFUSEビットをAVRDUDESSを使って書く方法](https://ameblo.jp/powpher/entry-12863906067.html)   
   UPDIを使用するがATMEL Studioはserial UPDIライタに対応していないので、AVR DUDESSを使ってオフラインで書き込みを行う
 
-## orgel_SW_402プロジェクトファイル　　
+### orgel_SW_402プロジェクトファイル　　
 orgel1_2_tinyAVR_240928フォルダの下のorgel_SW_402を開いて、頭のorgel_SW_402.atsln がプロジェクト  ファイルです。orgel_SW_402フォルダ内には、その階層の中には    
 * main.c : メインプログラム   
 * song_idx.s : 今回は使いませんが、オルゴールを実装するときに曲のインデックスが入ってます   
