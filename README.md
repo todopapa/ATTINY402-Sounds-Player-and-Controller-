@@ -316,9 +316,9 @@ orgel_conf.h に各種設定がありますので、自分の環境に合わせ�
 
 ## 使い方
 基板の端子は下記に示しています。
-
-[V2基板説明](https://github.com/user-attachments/assets/4ae1b704-3ac1-4445-b284-655c75480fdc)
- <img src="https://github.com/user-attachments/assets/4ae1b704-3ac1-4445-b284-655c75480fdc" width="640">   
+ <img src="https://github.com/user-attachments/assets/4ae1b704-3ac1-4445-b284-655c75480fdc" width="480">     
+基板左下から、ピエゾ入力端子（GND Sig)、電源端子（GND 3V)、半固定ボリューム。 右上から、UPDIコネクタ（UPDI 3V GND)、  
+スピーカ端子（+　-）。 基板左上から、演奏中LED、操作スイッチ、フラッシュメモリICソケットになります。  
 
 
 
