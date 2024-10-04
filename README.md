@@ -315,8 +315,8 @@ orgel_conf.h に各種設定がありますので、自分の環境に合わせ�
 [【Part2】Sound Player基板V2の音声データの作成方法と特性検討](https://ameblo.jp/powpher/entry-12868913563.html)   
 
 ## 使い方
-基板の端子は下記に示しています。
- <img src="https://github.com/user-attachments/assets/4ae1b704-3ac1-4445-b284-655c75480fdc" width="480">     
+基板の端子は下記に示しています。  
+ <img src="https://github.com/user-attachments/assets/4ae1b704-3ac1-4445-b284-655c75480fdc" width="480">       
 基板左下から、ピエゾ入力端子（GND Sig)、電源端子（GND 3V)、半固定ボリューム。 右上から、UPDIコネクタ（UPDI 3V GND)、  
 スピーカ端子（+　-）。 基板左上から、演奏中LED、操作スイッチ、フラッシュメモリICソケットになります。  
 
