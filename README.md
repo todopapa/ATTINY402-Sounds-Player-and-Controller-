@@ -126,7 +126,8 @@ J1～J5までXH、PHコネクタで設計してますが、J4 UPDIの3P ピン�
   UPDIを使用するがATMEL Studioはserial UPDIライタに対応していないので、AVR DUDESSを使ってオフラインで書き込みを行う
 
 ### orgel_SW_402プロジェクトファイル　　
-orgel1_2_tinyAVR_240928フォルダの下のorgel_SW_402を開いて、頭のorgel_SW_402.atsln がプロジェクト  ファイルです。orgel_SW_402フォルダ内には、その階層の中には    
+orgel1_2_tinyAVR_240928フォルダの下のorgel_SW_402を開いて、頭のorgel_SW_402.atsln がプロジェクト   
+ファイルです。orgel_SW_402フォルダ内には、その階層の中には    
 * main.c : メインプログラム   
 * song_idx.s : 今回は使いませんが、オルゴールを実装するときに曲のインデックスが入ってます   
 
@@ -294,7 +295,7 @@ vos_mac(0x390ab5,0x1396e5,16000)	//morobito-cover-.wav
 再生したい音声のファイルをMP3からWAV 8KHz 8bit（または16bit)のデータに変換します。
 そのために使うアプリは、iTunesかAudicityです。
 Audicityをつかってフォーマット変換する方法については、ブログに記載しています。
-[Sound Player基板V2の音声データの作成方法と特性検討](https://ameblo.jp/powpher/entry-12868881833.html)  
+[【Part1】Sound Player基板V2の音声データの作成方法と特性検討](https://ameblo.jp/powpher/entry-12868881833.html)  
 大泉さんのWAV2HEXでも、WAVファイルのサンプル周波数変換と変換bit 8bit化の機能はありますが、  
 16kHzの倍数以外だと、変換誤差がでますので、注意してください。事前に変換することをお勧めします。
 
@@ -310,8 +311,8 @@ my Document → ATMEL STUDIO → 7.0 → プロジェクトファイルをコピ
 orgel_conf.h に各種設定がありますので、自分の環境に合わせてここでパラメータを設定してください。  
  <img src="https://github.com/user-attachments/assets/824d828f-191e-4464-af83-77f35efcd514" width="640">   
 
-
-
+演奏する音声データを変更してプログラムを書き換える方法についても、ブログに記載していますので、参照してください。
+[【Part2】Sound Player基板V2の音声データの作成方法と特性検討](https://ameblo.jp/powpher/entry-12868913563.html)   
 
 
 
@@ -333,9 +334,6 @@ orgel_conf.h に各種設定がありますので、自分の環境に合わせ�
 
 ・このリモコンの動作モードは、ボタンを押している間連続で同じIRコードを発信します。  
 
-・単発でよい場合は、コードの226行目、252行目をコメントアウトしてください。  
-　　226　// while ((~PORTA.IN & SW0_PIN) | (~PORTA.IN & SW1_PIN) | (~PORTA.IN & SW2_PIN)){ //while SW0 or SW1 or SW2 is pressed then continue IR LED flashing  
-　　252 //	}  
 
 
 
