@@ -290,9 +290,11 @@ vos_mac(0x390ab5,0x1396e5,16000)	//morobito-cover-.wav
 //#define	CVD_EN		//CVDを実装するときに宣言する
 ```
 
-## 使い方
-今回はPanasonicの天井灯のリモコンを制御します。  
-・タクトSWを押すとリモコンコードの発信が始まります。  
+## 音声データの作成方法
+再生したい音声のファイルをMP3からWAV 8KHz 8bit（または16bit)のデータに変換します。
+そのために使うアプリは、iTunesかAudicityです。
+Audicityをつかってフォーマット変換する方法については、ブログに記載しています。
+[Sound Player基板V2の音声データの作成方法と特性検討](https://ameblo.jp/powpher/entry-12868881833.html)  
 
 ・リモコンは"mode切り替え", "UP", "DOWN" の3種類のコードを発信します。  
 
