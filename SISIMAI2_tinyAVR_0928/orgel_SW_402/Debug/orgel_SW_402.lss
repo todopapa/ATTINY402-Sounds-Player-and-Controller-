@@ -1,0 +1,1523 @@
+
+orgel_SW_402.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00803f00  00803f00  00000704  2**0
+                  ALLOC, LOAD, DATA
+  1 .text         0000008a  00000000  00000000  000000d4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      0000002f  00000000  00000000  00000704  2**0
+                  CONTENTS, READONLY
+  3 .stack.descriptors.hdr 00000038  00000000  00000000  00000733  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 000000e8  00000000  00000000  00000770  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00002f13  00000000  00000000  00000858  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00001410  00000000  00000000  0000376b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000924  00000000  00000000  00004b7b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  0000020c  00000000  00000000  000054a0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000081e  00000000  00000000  000056ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000003d9  00000000  00000000  00005eca  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 000000b8  00000000  00000000  000062a3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .text         00000002  00000626  00000626  000006fa  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 13 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000635c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .text.wait_1us 00000004  00000622  00000622  000006f6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .text.spi_trans 00000064  000003ce  000003ce  000004a2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text.spi_reset 00000008  0000060a  0000060a  000006de  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .text.W25_PWR_DOWN 0000001a  0000058a  0000058a  0000065e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 18 .text.VOICES_SEL 000000a8  00000134  00000134  00000208  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 19 .text.put_buf 0000002e  00000474  00000474  00000548  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 20 .text.apl_init 00000008  00000612  00000612  000006e6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 21 .text.CB_VOICES_END 00000008  0000061a  0000061a  000006ee  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 22 .text.voiceS_exe 0000007e  0000027a  0000027a  0000034e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 23 .text.wait_us 0000002a  000004a2  000004a2  00000576  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 24 .text.wait_ms 0000001c  00000552  00000552  00000626  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 25 .text.W25_PWR_UP 00000018  000005a4  000005a4  00000678  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 26 .text.__vector_8 00000070  000002f8  000002f8  000003cc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 27 .text.pwm_wait 00000010  000005d4  000005d4  000006a8  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 28 .text.CB_INIT 0000009e  000001dc  000001dc  000002b0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 29 .text.dev_pwm_stop 00000026  000004cc  000004cc  000005a0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 30 .text.dev_pwm_start 00000024  000004f2  000004f2  000005c6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 31 .text.apl_sleep 00000042  00000432  00000432  00000506  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 32 .text.CB_KOYUU 00000066  00000368  00000368  0000043c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 33 .text.main    000000aa  0000008a  0000008a  0000015e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 34 .text.__vector_7 0000001e  00000516  00000516  000005ea  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 35 .text.__vector_3 0000001e  00000534  00000534  00000608  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 36 .bss.onseiS.3103 00000002  00803f3a  00803f3a  00000704  2**0
+                  ALLOC
+ 37 .bss.sleep_tmr.3101 00000002  00803f3c  00803f3c  00000704  2**0
+                  ALLOC
+ 38 .bss.buf_read 00000001  00803f3e  00803f3e  00000704  2**0
+                  ALLOC
+ 39 .bss.buf_write 00000001  00803f3f  00803f3f  00000704  2**0
+                  ALLOC
+ 40 .bss.buf      00000028  00803f00  00803f00  00000704  2**0
+                  ALLOC
+ 41 .bss.voiceS   0000000e  00803f28  00803f28  00000704  2**0
+                  ALLOC
+ 42 .bss.kyotuu   00000004  00803f36  00803f36  00000704  2**0
+                  ALLOC
+ 43 .rodata.voiceS_idx 0000001b  0080856e  0000056e  00000642  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 44 .text.libgcc.mul 0000000c  000005f2  000005f2  000006c6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 45 .text.libgcc.mul 00000018  000005bc  000005bc  00000690  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 46 .text.__dummy_fini 00000002  00000628  00000628  000006fc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 47 .text.__dummy_funcs_on_exit 00000002  0000062a  0000062a  000006fe  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 48 .text.__dummy_simulator_exit 00000002  0000062c  0000062c  00000700  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 49 .text.exit    0000000e  000005e4  000005e4  000006b8  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 50 .text._Exit   00000002  0000062e  0000062e  00000702  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 51 .text.avrlibc 0000000c  000005fe  000005fe  000006d2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	1c c0       	rjmp	.+56     	; 0x3a <__ctors_end>
+   2:	11 c3       	rjmp	.+1570   	; 0x626 <__bad_interrupt>
+   4:	10 c3       	rjmp	.+1568   	; 0x626 <__bad_interrupt>
+   6:	96 c2       	rjmp	.+1324   	; 0x534 <__vector_3>
+   8:	0e c3       	rjmp	.+1564   	; 0x626 <__bad_interrupt>
+   a:	0d c3       	rjmp	.+1562   	; 0x626 <__bad_interrupt>
+   c:	0c c3       	rjmp	.+1560   	; 0x626 <__bad_interrupt>
+   e:	83 c2       	rjmp	.+1286   	; 0x516 <__vector_7>
+  10:	73 c1       	rjmp	.+742    	; 0x2f8 <__vector_8>
+  12:	09 c3       	rjmp	.+1554   	; 0x626 <__bad_interrupt>
+  14:	08 c3       	rjmp	.+1552   	; 0x626 <__bad_interrupt>
+  16:	07 c3       	rjmp	.+1550   	; 0x626 <__bad_interrupt>
+  18:	06 c3       	rjmp	.+1548   	; 0x626 <__bad_interrupt>
+  1a:	05 c3       	rjmp	.+1546   	; 0x626 <__bad_interrupt>
+  1c:	04 c3       	rjmp	.+1544   	; 0x626 <__bad_interrupt>
+  1e:	03 c3       	rjmp	.+1542   	; 0x626 <__bad_interrupt>
+  20:	02 c3       	rjmp	.+1540   	; 0x626 <__bad_interrupt>
+  22:	01 c3       	rjmp	.+1538   	; 0x626 <__bad_interrupt>
+  24:	00 c3       	rjmp	.+1536   	; 0x626 <__bad_interrupt>
+  26:	ff c2       	rjmp	.+1534   	; 0x626 <__bad_interrupt>
+  28:	fe c2       	rjmp	.+1532   	; 0x626 <__bad_interrupt>
+  2a:	fd c2       	rjmp	.+1530   	; 0x626 <__bad_interrupt>
+  2c:	fc c2       	rjmp	.+1528   	; 0x626 <__bad_interrupt>
+  2e:	fb c2       	rjmp	.+1526   	; 0x626 <__bad_interrupt>
+  30:	fa c2       	rjmp	.+1524   	; 0x626 <__bad_interrupt>
+  32:	f9 c2       	rjmp	.+1522   	; 0x626 <__bad_interrupt>
+
+00000034 <.dinit>:
+  34:	3f 00       	.word	0x003f	; ????
+  36:	3f 40       	sbci	r19, 0x0F	; 15
+  38:	80 00       	.word	0x0080	; ????
+
+0000003a <__ctors_end>:
+  3a:	11 24       	eor	r1, r1
+  3c:	1f be       	out	0x3f, r1	; 63
+  3e:	cf ef       	ldi	r28, 0xFF	; 255
+  40:	cd bf       	out	0x3d, r28	; 61
+  42:	df e3       	ldi	r29, 0x3F	; 63
+  44:	de bf       	out	0x3e, r29	; 62
+
+00000046 <__do_copy_data>:
+  46:	e4 e3       	ldi	r30, 0x34	; 52
+  48:	f0 e0       	ldi	r31, 0x00	; 0
+  4a:	40 e0       	ldi	r20, 0x00	; 0
+  4c:	17 c0       	rjmp	.+46     	; 0x7c <__do_clear_bss+0x8>
+  4e:	b5 91       	lpm	r27, Z+
+  50:	a5 91       	lpm	r26, Z+
+  52:	35 91       	lpm	r19, Z+
+  54:	25 91       	lpm	r18, Z+
+  56:	05 91       	lpm	r16, Z+
+  58:	07 fd       	sbrc	r16, 7
+  5a:	0c c0       	rjmp	.+24     	; 0x74 <__do_clear_bss>
+  5c:	95 91       	lpm	r25, Z+
+  5e:	85 91       	lpm	r24, Z+
+  60:	ef 01       	movw	r28, r30
+  62:	f9 2f       	mov	r31, r25
+  64:	e8 2f       	mov	r30, r24
+  66:	05 90       	lpm	r0, Z+
+  68:	0d 92       	st	X+, r0
+  6a:	a2 17       	cp	r26, r18
+  6c:	b3 07       	cpc	r27, r19
+  6e:	d9 f7       	brne	.-10     	; 0x66 <__do_copy_data+0x20>
+  70:	fe 01       	movw	r30, r28
+  72:	04 c0       	rjmp	.+8      	; 0x7c <__do_clear_bss+0x8>
+
+00000074 <__do_clear_bss>:
+  74:	1d 92       	st	X+, r1
+  76:	a2 17       	cp	r26, r18
+  78:	b3 07       	cpc	r27, r19
+  7a:	e1 f7       	brne	.-8      	; 0x74 <__do_clear_bss>
+  7c:	e9 33       	cpi	r30, 0x39	; 57
+  7e:	f4 07       	cpc	r31, r20
+  80:	31 f7       	brne	.-52     	; 0x4e <__do_copy_data+0x8>
+  82:	03 d0       	rcall	.+6      	; 0x8a <_etext>
+  84:	af c2       	rjmp	.+1374   	; 0x5e4 <exit>
+
+00000086 <_exit>:
+  86:	f8 94       	cli
+
+00000088 <__stop_program>:
+  88:	ff cf       	rjmp	.-2      	; 0x88 <__stop_program>
+
+Disassembly of section .text:
+
+00000626 <__bad_interrupt>:
+ 626:	ec cc       	rjmp	.-1576   	; 0x0 <__TEXT_REGION_ORIGIN__>
+
+Disassembly of section .text.wait_1us:
+
+00000622 <wait_1us>:
+//1us縺ｮ蠕�縺｡
+//==============================================
+static void wait_1us(void)
+{
+
+		asm("rjmp .+0");
+ 622:	00 c0       	rjmp	.+0      	; 0x624 <wait_1us+0x2>
+ 624:	08 95       	ret
+
+Disassembly of section .text.spi_trans:
+
+000003ce <spi_trans>:
+static unsigned char spi_trans(			//受信したﾃﾞｰﾀを返す
+	unsigned char data,			//送信するﾃﾞｰﾀ
+	unsigned char sck_h)			//最終ﾋﾞｯﾄのSCKの扱い
+						//　(2線SPI時のﾊﾟﾜｰﾀﾞｳﾝのため)
+						//　0=Lにする､1=Hを保持する
+{
+ 3ce:	ff 92       	push	r15
+ 3d0:	0f 93       	push	r16
+ 3d2:	1f 93       	push	r17
+ 3d4:	cf 93       	push	r28
+ 3d6:	df 93       	push	r29
+ 3d8:	18 2f       	mov	r17, r24
+ 3da:	f6 2e       	mov	r15, r22
+	unsigned char c=8;
+ 3dc:	88 e0       	ldi	r24, 0x08	; 8
+
+//DBS_H;
+//DBG_C('(');
+//DBG_B(data);
+	while(c--)
+ 3de:	1e c0       	rjmp	.+60     	; 0x41c <__LOCK_REGION_LENGTH__+0x1c>
+	{
+		if(data&0x80) SPI_MOSI_H;	//ﾃﾞｰﾀﾋﾞｯﾄを
+ 3e0:	11 23       	and	r17, r17
+ 3e2:	24 f4       	brge	.+8      	; 0x3ec <spi_trans+0x1e>
+ 3e4:	80 e8       	ldi	r24, 0x80	; 128
+ 3e6:	80 93 05 04 	sts	0x0405, r24	; 0x800405 <__RODATA_PM_OFFSET__+0x7f8405>
+ 3ea:	03 c0       	rjmp	.+6      	; 0x3f2 <spi_trans+0x24>
+		else SPI_MOSI_L;		//　MOSIに乗せる
+ 3ec:	80 e8       	ldi	r24, 0x80	; 128
+ 3ee:	80 93 06 04 	sts	0x0406, r24	; 0x800406 <__RODATA_PM_OFFSET__+0x7f8406>
+#if defined(SPI2)||defined(SPI3)	//2線SPIまたは3線SPIのとき
+		SPI_MOSI_OUT;			//MOSIを出力ﾓｰﾄﾞ
+ 3f2:	c0 e0       	ldi	r28, 0x00	; 0
+ 3f4:	d4 e0       	ldi	r29, 0x04	; 4
+ 3f6:	80 e8       	ldi	r24, 0x80	; 128
+ 3f8:	89 83       	std	Y+1, r24	; 0x01
+#endif
+#ifdef SPI2 				//2線SPIのとき
+		__disable_irq();		//割込み禁止
+#endif
+		SPI_SCK_H;			//SCKをH
+ 3fa:	94 e0       	ldi	r25, 0x04	; 4
+ 3fc:	9d 83       	std	Y+5, r25	; 0x05
+#if defined(SPI2)||defined(SPI3)	//2線SPIまたは3線SPIのとき
+		SPI_MISO_IN;			//MISOを入力ﾓｰﾄﾞ
+ 3fe:	8a 83       	std	Y+2, r24	; 0x02
+		wait_1us();
+ 400:	10 d1       	rcall	.+544    	; 0x622 <wait_1us>
+#endif
+		data<<=1;			//ﾃﾞｰﾀを次に進める
+ 402:	11 0f       	add	r17, r17
+		if(SPI_MISO) data++;		//MISOをﾃﾞｰﾀに取込む
+ 404:	88 85       	ldd	r24, Y+8	; 0x08
+ 406:	88 23       	and	r24, r24
+ 408:	0c f4       	brge	.+2      	; 0x40c <__LOCK_REGION_LENGTH__+0xc>
+ 40a:	1f 5f       	subi	r17, 0xFF	; 255
+		if(c||(!sck_h))			//最終ﾋﾞｯﾄ以外かﾊﾟﾜｰﾀﾞｳﾝ以外は
+ 40c:	01 11       	cpse	r16, r1
+ 40e:	02 c0       	rjmp	.+4      	; 0x414 <__LOCK_REGION_LENGTH__+0x14>
+ 410:	f1 10       	cpse	r15, r1
+ 412:	03 c0       	rjmp	.+6      	; 0x41a <__LOCK_REGION_LENGTH__+0x1a>
+		{
+			SPI_SCK_L;		//SCKをL
+ 414:	84 e0       	ldi	r24, 0x04	; 4
+ 416:	80 93 06 04 	sts	0x0406, r24	; 0x800406 <__RODATA_PM_OFFSET__+0x7f8406>
+ 41a:	80 2f       	mov	r24, r16
+	unsigned char c=8;
+
+//DBS_H;
+//DBG_C('(');
+//DBG_B(data);
+	while(c--)
+ 41c:	0f ef       	ldi	r16, 0xFF	; 255
+ 41e:	08 0f       	add	r16, r24
+ 420:	81 11       	cpse	r24, r1
+ 422:	de cf       	rjmp	.-68     	; 0x3e0 <spi_trans+0x12>
+	};
+//DBG_B(data);
+//DBG_C(')');
+//DBS_L;
+	return(data);				//受信したﾃﾞｰﾀを返す
+}
+ 424:	81 2f       	mov	r24, r17
+ 426:	df 91       	pop	r29
+ 428:	cf 91       	pop	r28
+ 42a:	1f 91       	pop	r17
+ 42c:	0f 91       	pop	r16
+ 42e:	ff 90       	pop	r15
+ 430:	08 95       	ret
+
+Disassembly of section .text.spi_reset:
+
+0000060a <spi_reset>:
+//SPIﾘｾｯﾄ
+//==============================================
+static void spi_reset(void)
+{
+
+	SPI_SS_H;				//SSをﾈｹﾞｰﾄする
+ 60a:	82 e0       	ldi	r24, 0x02	; 2
+ 60c:	80 93 05 04 	sts	0x0405, r24	; 0x800405 <__RODATA_PM_OFFSET__+0x7f8405>
+ 610:	08 95       	ret
+
+Disassembly of section .text.W25_PWR_DOWN:
+
+0000058a <W25_PWR_DOWN>:
+//W25をﾊﾟﾜｰﾀﾞｳﾝ(API関数)
+//==============================================
+static void W25_PWR_DOWN(void)
+{
+
+	voiceS.no=0;				//音声再生終了にする
+ 58a:	10 92 30 3f 	sts	0x3F30, r1	; 0x803f30 <voiceS+0x8>
+ 58e:	10 92 31 3f 	sts	0x3F31, r1	; 0x803f31 <voiceS+0x9>
+	spi_reset();				//SPIをﾘｾｯﾄする
+ 592:	3b d0       	rcall	.+118    	; 0x60a <spi_reset>
+	SPI_SS_L;				//ﾁｯﾌﾟｾﾚｸﾄ
+ 594:	82 e0       	ldi	r24, 0x02	; 2
+ 596:	80 93 06 04 	sts	0x0406, r24	; 0x800406 <__RODATA_PM_OFFSET__+0x7f8406>
+#ifdef SPI2				//2線SPIのとき
+	spi_trans(W25_PwrDwn,1);		//ﾊﾟﾜｰﾀﾞｳﾝｺﾏﾝﾄﾞ
+#else					//2線SPIでないとき
+	spi_trans(W25_PwrDwn,0);		//ﾊﾟﾜｰﾀﾞｳﾝｺﾏﾝﾄﾞ
+ 59a:	60 e0       	ldi	r22, 0x00	; 0
+ 59c:	89 eb       	ldi	r24, 0xB9	; 185
+ 59e:	17 df       	rcall	.-466    	; 0x3ce <spi_trans>
+#endif
+	spi_reset();				//SPIをﾘｾｯﾄする
+ 5a0:	34 d0       	rcall	.+104    	; 0x60a <spi_reset>
+ 5a2:	08 95       	ret
+
+Disassembly of section .text.VOICES_SEL:
+
+00000134 <VOICES_SEL>:
+//==============================================
+//音声S選択処理(API関数)
+//==============================================
+static void VOICES_SEL(				//戻り値無し
+	unsigned short no)			//音声番号(0は再生中止)
+{
+ 134:	cf 93       	push	r28
+ 136:	df 93       	push	r29
+
+//DBG_C('\n');
+//DBG_C('s');
+//DBG_S(no);
+//DBG_C('i');
+	if(no)					//再生開始のとき
+ 138:	00 97       	sbiw	r24, 0x00	; 0
+ 13a:	09 f4       	brne	.+2      	; 0x13e <VOICES_SEL+0xa>
+ 13c:	47 c0       	rjmp	.+142    	; 0x1cc <VOICES_SEL+0x98>
+	{
+		if(no>sizeof(voiceS_idx)/sizeof(voiceS_idx[0])) return;
+ 13e:	84 30       	cpi	r24, 0x04	; 4
+ 140:	91 05       	cpc	r25, r1
+ 142:	08 f0       	brcs	.+2      	; 0x146 <VOICES_SEL+0x12>
+ 144:	48 c0       	rjmp	.+144    	; 0x1d6 <VOICES_SEL+0xa2>
+						//実装数を超えているときは戻る
+		if(voiceS.no!=no)		//発声中の音声番号と異なるときのみ
+ 146:	20 91 30 3f 	lds	r18, 0x3F30	; 0x803f30 <voiceS+0x8>
+ 14a:	30 91 31 3f 	lds	r19, 0x3F31	; 0x803f31 <voiceS+0x9>
+ 14e:	82 17       	cp	r24, r18
+ 150:	93 07       	cpc	r25, r19
+ 152:	09 f4       	brne	.+2      	; 0x156 <VOICES_SEL+0x22>
+ 154:	40 c0       	rjmp	.+128    	; 0x1d6 <VOICES_SEL+0xa2>
+						//　音声を切り替える
+		{
+			voiceS.no=no--;		//音声番号を設定
+ 156:	fc 01       	movw	r30, r24
+ 158:	31 97       	sbiw	r30, 0x01	; 1
+ 15a:	c8 e2       	ldi	r28, 0x28	; 40
+ 15c:	df e3       	ldi	r29, 0x3F	; 63
+ 15e:	88 87       	std	Y+8, r24	; 0x08
+ 160:	99 87       	std	Y+9, r25	; 0x09
+			voiceS.begin=voiceS_idx[no].adr;
+ 162:	cf 01       	movw	r24, r30
+ 164:	88 0f       	add	r24, r24
+ 166:	99 1f       	adc	r25, r25
+ 168:	88 0f       	add	r24, r24
+ 16a:	99 1f       	adc	r25, r25
+ 16c:	88 0f       	add	r24, r24
+ 16e:	99 1f       	adc	r25, r25
+ 170:	e8 0f       	add	r30, r24
+ 172:	f9 1f       	adc	r31, r25
+ 174:	e2 59       	subi	r30, 0x92	; 146
+ 176:	fa 47       	sbci	r31, 0x7A	; 122
+ 178:	40 81       	ld	r20, Z
+ 17a:	51 81       	ldd	r21, Z+1	; 0x01
+ 17c:	62 81       	ldd	r22, Z+2	; 0x02
+ 17e:	73 81       	ldd	r23, Z+3	; 0x03
+ 180:	48 83       	st	Y, r20
+ 182:	59 83       	std	Y+1, r21	; 0x01
+ 184:	6a 83       	std	Y+2, r22	; 0x02
+ 186:	7b 83       	std	Y+3, r23	; 0x03
+						//音声ﾃﾞｰﾀの開始ｱﾄﾞﾚｽを設定
+//DBG_L(voiceS.begin);
+			voiceS.end=voiceS.begin+voiceS_idx[no].len;
+ 188:	84 81       	ldd	r24, Z+4	; 0x04
+ 18a:	95 81       	ldd	r25, Z+5	; 0x05
+ 18c:	a6 81       	ldd	r26, Z+6	; 0x06
+ 18e:	b7 81       	ldd	r27, Z+7	; 0x07
+ 190:	84 0f       	add	r24, r20
+ 192:	95 1f       	adc	r25, r21
+ 194:	a6 1f       	adc	r26, r22
+ 196:	b7 1f       	adc	r27, r23
+ 198:	8c 83       	std	Y+4, r24	; 0x04
+ 19a:	9d 83       	std	Y+5, r25	; 0x05
+ 19c:	ae 83       	std	Y+6, r26	; 0x06
+ 19e:	bf 83       	std	Y+7, r27	; 0x07
+						//音声ﾃﾞｰﾀの終了ｱﾄﾞﾚｽを設定
+//DBG_L(voiceS.end);
+			voiceS.ps=voiceS.psn=voiceS_idx[no].psn;
+ 1a0:	80 85       	ldd	r24, Z+8	; 0x08
+ 1a2:	8c 87       	std	Y+12, r24	; 0x0c
+ 1a4:	8d 87       	std	Y+13, r24	; 0x0d
+						//再生処理ﾌﾟﾘｽｹｰﾙ値を設定
+//DBG_B(voiceS.psn);
+			voiceS.pcm=0;		//PCM値を初期化
+ 1a6:	1a 86       	std	Y+10, r1	; 0x0a
+ 1a8:	1b 86       	std	Y+11, r1	; 0x0b
+//DBG_S(voiceS.pcm);
+			spi_reset();		//SPIをﾘｾｯﾄする
+ 1aa:	2f d2       	rcall	.+1118   	; 0x60a <spi_reset>
+			SPI_SS_L;		//ﾁｯﾌﾟｾﾚｸﾄ
+ 1ac:	82 e0       	ldi	r24, 0x02	; 2
+ 1ae:	80 93 06 04 	sts	0x0406, r24	; 0x800406 <__RODATA_PM_OFFSET__+0x7f8406>
+			spi_trans(W25_ReadData,0);
+ 1b2:	60 e0       	ldi	r22, 0x00	; 0
+ 1b4:	83 e0       	ldi	r24, 0x03	; 3
+ 1b6:	0b d1       	rcall	.+534    	; 0x3ce <spi_trans>
+						//ReadDataｺﾏﾝﾄﾞ
+			spi_trans(voiceS.begin>>16,0);
+ 1b8:	60 e0       	ldi	r22, 0x00	; 0
+ 1ba:	8a 81       	ldd	r24, Y+2	; 0x02
+ 1bc:	08 d1       	rcall	.+528    	; 0x3ce <spi_trans>
+						//ｱﾄﾞﾚｽ(MSB)
+			spi_trans(voiceS.begin>>8,0);
+ 1be:	60 e0       	ldi	r22, 0x00	; 0
+ 1c0:	89 81       	ldd	r24, Y+1	; 0x01
+ 1c2:	05 d1       	rcall	.+522    	; 0x3ce <spi_trans>
+						//ｱﾄﾞﾚｽ
+			spi_trans(voiceS.begin,0);
+ 1c4:	60 e0       	ldi	r22, 0x00	; 0
+ 1c6:	88 81       	ld	r24, Y
+ 1c8:	02 d1       	rcall	.+516    	; 0x3ce <spi_trans>
+ 1ca:	05 c0       	rjmp	.+10     	; 0x1d6 <VOICES_SEL+0xa2>
+						//ｱﾄﾞﾚｽ(LSB)
+		}
+	}
+	else					//再生中断のとき
+	{
+		voiceS.no=0;			//再生終了にする
+ 1cc:	10 92 30 3f 	sts	0x3F30, r1	; 0x803f30 <voiceS+0x8>
+ 1d0:	10 92 31 3f 	sts	0x3F31, r1	; 0x803f31 <voiceS+0x9>
+		spi_reset();			//SPIをﾘｾｯﾄする
+ 1d4:	1a d2       	rcall	.+1076   	; 0x60a <spi_reset>
+	}
+//DBG_D(&voiceS,sizeof(voiceS));
+}
+ 1d6:	df 91       	pop	r29
+ 1d8:	cf 91       	pop	r28
+ 1da:	08 95       	ret
+
+Disassembly of section .text.put_buf:
+
+00000474 <put_buf>:
+//ﾊﾞｯﾌｧへ詰める
+//ﾊﾞｯﾌｧﾌﾙの場合は待合せる
+//==============================================
+static void put_buf(
+	short pcm)				//PCMﾃﾞｰﾀ
+{
+ 474:	ac 01       	movw	r20, r24
+	unsigned char n;
+
+//DBG_C('\n');
+//DBG_C('-');
+//DBG_S(pcm);
+	n=buf_write;				//書込みﾎﾟｲﾝﾀを取得する
+ 476:	20 91 3f 3f 	lds	r18, 0x3F3F	; 0x803f3f <buf_write>
+	if(++n==OUT_BUF_N) n=0;			//書込み位置を仮に進める
+ 47a:	2f 5f       	subi	r18, 0xFF	; 255
+ 47c:	24 31       	cpi	r18, 0x14	; 20
+ 47e:	09 f4       	brne	.+2      	; 0x482 <put_buf+0xe>
+ 480:	20 e0       	ldi	r18, 0x00	; 0
+//DBS_H;
+	while(n==buf_read);			//ﾊﾞｯﾌｧが空くのを待つ
+ 482:	90 91 3e 3f 	lds	r25, 0x3F3E	; 0x803f3e <buf_read>
+ 486:	29 17       	cp	r18, r25
+ 488:	e1 f3       	breq	.-8      	; 0x482 <put_buf+0xe>
+//DBS_L;
+	buf[buf_write]=pcm;			//ﾃﾞｰﾀをﾊﾞｯﾌｧに書込む
+ 48a:	e0 91 3f 3f 	lds	r30, 0x3F3F	; 0x803f3f <buf_write>
+ 48e:	f0 e0       	ldi	r31, 0x00	; 0
+ 490:	ee 0f       	add	r30, r30
+ 492:	ff 1f       	adc	r31, r31
+ 494:	e0 50       	subi	r30, 0x00	; 0
+ 496:	f1 4c       	sbci	r31, 0xC1	; 193
+ 498:	40 83       	st	Z, r20
+ 49a:	51 83       	std	Z+1, r21	; 0x01
+	buf_write=n;				//書込みﾎﾟｲﾝﾀを更新する
+ 49c:	20 93 3f 3f 	sts	0x3F3F, r18	; 0x803f3f <buf_write>
+ 4a0:	08 95       	ret
+
+Disassembly of section .text.apl_init:
+
+00000612 <apl_init>:
+//DBG_C('\n');
+//DBG_C('$');
+
+	//ﾓｰﾀｰ制御ﾎﾟｰﾄ設定
+#ifdef MTR_BIT				//ﾓｰﾀｰ制御ﾎﾟｰﾄが実装されているとき
+	MTR_PORT.OUTSET=1<<MTR_BIT;		//ﾓｰﾀｰを停止
+ 612:	80 e4       	ldi	r24, 0x40	; 64
+ 614:	80 93 05 04 	sts	0x0405, r24	; 0x800405 <__RODATA_PM_OFFSET__+0x7f8405>
+ 618:	08 95       	ret
+
+Disassembly of section .text.CB_VOICES_END:
+
+0000061a <CB_VOICES_END>:
+//==============================================
+static void CB_VOICES_END(void)
+{
+#ifdef MTR_BIT				//ﾓｰﾀｰ制御ﾎﾟｰﾄが実装されているとき
+//	MTR_PORT.OUTSET=1<<MTR_BIT;		//ﾓｰﾀｰを停止
+	MTR_PORT.DIRCLR=1<<MTR_BIT;		//ﾓｰﾀｰを停止（論理反転 YM)
+ 61a:	80 e4       	ldi	r24, 0x40	; 64
+ 61c:	80 93 02 04 	sts	0x0402, r24	; 0x800402 <__RODATA_PM_OFFSET__+0x7f8402>
+ 620:	08 95       	ret
+
+Disassembly of section .text.voiceS_exe:
+
+0000027a <voiceS_exe>:
+
+//==============================================
+//音声S再生処理
+//==============================================
+static void voiceS_exe(void)
+{
+ 27a:	0f 93       	push	r16
+ 27c:	1f 93       	push	r17
+
+//DBG_C('\n');
+//DBG_C('p');
+	voiceS.pcm=(short)spi_trans(0,0)-128;	//音声ﾃﾞｰﾀを取出して､
+ 27e:	60 e0       	ldi	r22, 0x00	; 0
+ 280:	80 e0       	ldi	r24, 0x00	; 0
+ 282:	a5 d0       	rcall	.+330    	; 0x3ce <spi_trans>
+ 284:	a8 2f       	mov	r26, r24
+ 286:	b0 e0       	ldi	r27, 0x00	; 0
+ 288:	a0 58       	subi	r26, 0x80	; 128
+ 28a:	b1 09       	sbc	r27, r1
+						//　8ﾋﾞｯﾄPCM形式をsignedに変換
+//DBG_S(voiceS.pcm);
+	voiceS.pcm=(long)voiceS.pcm*((long)VOICES_VOL*PWM_STEP/100)/128;
+ 28c:	20 ef       	ldi	r18, 0xF0	; 240
+ 28e:	31 e0       	ldi	r19, 0x01	; 1
+ 290:	b0 d1       	rcall	.+864    	; 0x5f2 <__usmulhisi3>
+ 292:	8b 01       	movw	r16, r22
+ 294:	9c 01       	movw	r18, r24
+ 296:	99 23       	and	r25, r25
+ 298:	24 f4       	brge	.+8      	; 0x2a2 <voiceS_exe+0x28>
+ 29a:	01 58       	subi	r16, 0x81	; 129
+ 29c:	1f 4f       	sbci	r17, 0xFF	; 255
+ 29e:	2f 4f       	sbci	r18, 0xFF	; 255
+ 2a0:	3f 4f       	sbci	r19, 0xFF	; 255
+ 2a2:	d9 01       	movw	r26, r18
+ 2a4:	c8 01       	movw	r24, r16
+ 2a6:	68 94       	set
+ 2a8:	16 f8       	bld	r1, 6
+ 2aa:	b5 95       	asr	r27
+ 2ac:	a7 95       	ror	r26
+ 2ae:	97 95       	ror	r25
+ 2b0:	87 95       	ror	r24
+ 2b2:	16 94       	lsr	r1
+ 2b4:	d1 f7       	brne	.-12     	; 0x2aa <voiceS_exe+0x30>
+ 2b6:	e8 e2       	ldi	r30, 0x28	; 40
+ 2b8:	ff e3       	ldi	r31, 0x3F	; 63
+ 2ba:	82 87       	std	Z+10, r24	; 0x0a
+ 2bc:	93 87       	std	Z+11, r25	; 0x0b
+						//音量配分を掛ける
+//DBG_S(voiceS.pcm);
+	if(++voiceS.begin==voiceS.end)		//音声ﾃﾞｰﾀが最後のとき
+ 2be:	80 81       	ld	r24, Z
+ 2c0:	91 81       	ldd	r25, Z+1	; 0x01
+ 2c2:	a2 81       	ldd	r26, Z+2	; 0x02
+ 2c4:	b3 81       	ldd	r27, Z+3	; 0x03
+ 2c6:	01 96       	adiw	r24, 0x01	; 1
+ 2c8:	a1 1d       	adc	r26, r1
+ 2ca:	b1 1d       	adc	r27, r1
+ 2cc:	80 83       	st	Z, r24
+ 2ce:	91 83       	std	Z+1, r25	; 0x01
+ 2d0:	a2 83       	std	Z+2, r26	; 0x02
+ 2d2:	b3 83       	std	Z+3, r27	; 0x03
+ 2d4:	44 81       	ldd	r20, Z+4	; 0x04
+ 2d6:	55 81       	ldd	r21, Z+5	; 0x05
+ 2d8:	66 81       	ldd	r22, Z+6	; 0x06
+ 2da:	77 81       	ldd	r23, Z+7	; 0x07
+ 2dc:	84 17       	cp	r24, r20
+ 2de:	95 07       	cpc	r25, r21
+ 2e0:	a6 07       	cpc	r26, r22
+ 2e2:	b7 07       	cpc	r27, r23
+ 2e4:	31 f4       	brne	.+12     	; 0x2f2 <voiceS_exe+0x78>
+	{
+//DBG_C('e');
+		voiceS.no=0;			//再生終了にする
+ 2e6:	10 92 30 3f 	sts	0x3F30, r1	; 0x803f30 <voiceS+0x8>
+ 2ea:	10 92 31 3f 	sts	0x3F31, r1	; 0x803f31 <voiceS+0x9>
+		spi_reset();			//SPIをﾘｾｯﾄする
+ 2ee:	8d d1       	rcall	.+794    	; 0x60a <spi_reset>
+		CB_VOICES_END();		//音声再生終了処理(ｺｰﾙﾊﾞｯｸ関数)を呼出す
+ 2f0:	94 d1       	rcall	.+808    	; 0x61a <CB_VOICES_END>
+	}
+}
+ 2f2:	1f 91       	pop	r17
+ 2f4:	0f 91       	pop	r16
+ 2f6:	08 95       	ret
+
+Disassembly of section .text.wait_us:
+
+000004a2 <wait_us>:
+//==============================================
+void wait_us(
+	unsigned short us)			//蠕�縺｡譎る俣[us]
+{
+
+	us/=2;
+ 4a2:	96 95       	lsr	r25
+ 4a4:	87 95       	ror	r24
+	while(--us)
+ 4a6:	0f c0       	rjmp	.+30     	; 0x4c6 <wait_us+0x24>
+	{
+		asm("rjmp .+0");
+ 4a8:	00 c0       	rjmp	.+0      	; 0x4aa <wait_us+0x8>
+		asm("rjmp .+0");
+ 4aa:	00 c0       	rjmp	.+0      	; 0x4ac <wait_us+0xa>
+		asm("rjmp .+0");
+ 4ac:	00 c0       	rjmp	.+0      	; 0x4ae <wait_us+0xc>
+		asm("rjmp .+0");
+ 4ae:	00 c0       	rjmp	.+0      	; 0x4b0 <wait_us+0xe>
+		asm("rjmp .+0");
+ 4b0:	00 c0       	rjmp	.+0      	; 0x4b2 <wait_us+0x10>
+		asm("rjmp .+0");
+ 4b2:	00 c0       	rjmp	.+0      	; 0x4b4 <wait_us+0x12>
+		asm("rjmp .+0");
+ 4b4:	00 c0       	rjmp	.+0      	; 0x4b6 <wait_us+0x14>
+		asm("rjmp .+0");
+ 4b6:	00 c0       	rjmp	.+0      	; 0x4b8 <wait_us+0x16>
+		asm("rjmp .+0");
+ 4b8:	00 c0       	rjmp	.+0      	; 0x4ba <wait_us+0x18>
+		asm("rjmp .+0");
+ 4ba:	00 c0       	rjmp	.+0      	; 0x4bc <wait_us+0x1a>
+		asm("rjmp .+0");
+ 4bc:	00 c0       	rjmp	.+0      	; 0x4be <wait_us+0x1c>
+		asm("rjmp .+0");
+ 4be:	00 c0       	rjmp	.+0      	; 0x4c0 <wait_us+0x1e>
+		asm("rjmp .+0");
+ 4c0:	00 c0       	rjmp	.+0      	; 0x4c2 <wait_us+0x20>
+		asm("rjmp .+0");
+ 4c2:	00 c0       	rjmp	.+0      	; 0x4c4 <wait_us+0x22>
+		asm("rjmp .+0");
+ 4c4:	00 c0       	rjmp	.+0      	; 0x4c6 <wait_us+0x24>
+void wait_us(
+	unsigned short us)			//蠕�縺｡譎る俣[us]
+{
+
+	us/=2;
+	while(--us)
+ 4c6:	01 97       	sbiw	r24, 0x01	; 1
+ 4c8:	79 f7       	brne	.-34     	; 0x4a8 <wait_us+0x6>
+		asm("rjmp .+0");
+		asm("rjmp .+0");
+		asm("rjmp .+0");
+		asm("rjmp .+0");
+	}
+}
+ 4ca:	08 95       	ret
+
+Disassembly of section .text.wait_ms:
+
+00000552 <wait_ms>:
+//==============================================
+//ms蜊倅ｽ阪�ｮ蠕�縺｡
+//==============================================
+static void wait_ms(
+	unsigned short ms)			//蠕�縺｡譎る俣[ms]
+{
+ 552:	cf 93       	push	r28
+ 554:	df 93       	push	r29
+
+	while(ms--)
+ 556:	04 c0       	rjmp	.+8      	; 0x560 <wait_ms+0xe>
+	{
+		wait_us(1000);
+ 558:	88 ee       	ldi	r24, 0xE8	; 232
+ 55a:	93 e0       	ldi	r25, 0x03	; 3
+ 55c:	a2 df       	rcall	.-188    	; 0x4a2 <wait_us>
+//==============================================
+static void wait_ms(
+	unsigned short ms)			//蠕�縺｡譎る俣[ms]
+{
+
+	while(ms--)
+ 55e:	ce 01       	movw	r24, r28
+ 560:	ec 01       	movw	r28, r24
+ 562:	21 97       	sbiw	r28, 0x01	; 1
+ 564:	89 2b       	or	r24, r25
+ 566:	c1 f7       	brne	.-16     	; 0x558 <wait_ms+0x6>
+	{
+		wait_us(1000);
+	}
+}
+ 568:	df 91       	pop	r29
+ 56a:	cf 91       	pop	r28
+ 56c:	08 95       	ret
+
+Disassembly of section .text.W25_PWR_UP:
+
+000005a4 <W25_PWR_UP>:
+//W25をﾊﾟﾜｰｱｯﾌﾟ(API関数)
+//==============================================
+static void W25_PWR_UP(void)
+{
+
+	spi_reset();				//SPIをﾘｾｯﾄする
+ 5a4:	32 d0       	rcall	.+100    	; 0x60a <spi_reset>
+	wait_us(10);
+ 5a6:	8a e0       	ldi	r24, 0x0A	; 10
+ 5a8:	90 e0       	ldi	r25, 0x00	; 0
+ 5aa:	7b df       	rcall	.-266    	; 0x4a2 <wait_us>
+	SPI_SS_L;				//ﾁｯﾌﾟｾﾚｸﾄ
+ 5ac:	82 e0       	ldi	r24, 0x02	; 2
+ 5ae:	80 93 06 04 	sts	0x0406, r24	; 0x800406 <__RODATA_PM_OFFSET__+0x7f8406>
+#ifdef SPI2				//2線SPIのとき
+	spi_trans(W25_Re_PwrDwn,1);		//ﾊﾟﾜｰﾀﾞｳﾝ解除ｺﾏﾝﾄﾞ
+#else					//2線SPIでないとき
+	spi_trans(W25_Re_PwrDwn,0);		//ﾊﾟﾜｰﾀﾞｳﾝ解除ｺﾏﾝﾄﾞ
+ 5b2:	60 e0       	ldi	r22, 0x00	; 0
+ 5b4:	8b ea       	ldi	r24, 0xAB	; 171
+ 5b6:	0b df       	rcall	.-490    	; 0x3ce <spi_trans>
+#endif
+	spi_reset();				//SPIをﾘｾｯﾄする
+ 5b8:	28 d0       	rcall	.+80     	; 0x60a <spi_reset>
+ 5ba:	08 95       	ret
+
+Disassembly of section .text.__vector_8:
+
+000002f8 <__vector_8>:
+//==============================================
+//TCA0ｵｰﾊﾞﾌﾛｰ(PWM周期)割込みﾊﾝﾄﾞﾗ
+//・ﾊﾞｯﾌｧｱﾝﾀﾞｰﾗﾝ時はDCを更新しない(前回の値が継続する)
+//==============================================
+ISR(TCA0_OVF_vect)
+{
+ 2f8:	1f 92       	push	r1
+ 2fa:	0f 92       	push	r0
+ 2fc:	0f b6       	in	r0, 0x3f	; 63
+ 2fe:	0f 92       	push	r0
+ 300:	11 24       	eor	r1, r1
+ 302:	2f 93       	push	r18
+ 304:	8f 93       	push	r24
+ 306:	9f 93       	push	r25
+ 308:	ef 93       	push	r30
+ 30a:	ff 93       	push	r31
+	short data;
+
+//DBS_H;
+//DBG_C('[');
+	TCA0.SINGLE.INTFLAGS=0b00000001;	//ｵｰﾊﾞｰﾌﾛｰ割込みﾌﾗｸﾞをｸﾘｱ
+ 30c:	81 e0       	ldi	r24, 0x01	; 1
+ 30e:	80 93 0b 0a 	sts	0x0A0B, r24	; 0x800a0b <__RODATA_PM_OFFSET__+0x7f8a0b>
+
+	//ﾃﾞｰﾀを取得
+	if(buf_read==buf_write) return;		//ﾃﾞｰﾀが無かったら戻る
+ 312:	90 91 3e 3f 	lds	r25, 0x3F3E	; 0x803f3e <buf_read>
+ 316:	80 91 3f 3f 	lds	r24, 0x3F3F	; 0x803f3f <buf_write>
+ 31a:	98 17       	cp	r25, r24
+ 31c:	d9 f0       	breq	.+54     	; 0x354 <__vector_8+0x5c>
+	data=buf[buf_read];			//ﾃﾞｰﾀを取出す
+ 31e:	e0 91 3e 3f 	lds	r30, 0x3F3E	; 0x803f3e <buf_read>
+ 322:	f0 e0       	ldi	r31, 0x00	; 0
+ 324:	ee 0f       	add	r30, r30
+ 326:	ff 1f       	adc	r31, r31
+ 328:	e0 50       	subi	r30, 0x00	; 0
+ 32a:	f1 4c       	sbci	r31, 0xC1	; 193
+ 32c:	80 81       	ld	r24, Z
+ 32e:	91 81       	ldd	r25, Z+1	; 0x01
+//DBG_S(data);
+	if(buf_read==(OUT_BUF_N-1)) buf_read=0;	//ﾊﾞｯﾌｧの後尾になったら先頭に戻す
+ 330:	20 91 3e 3f 	lds	r18, 0x3F3E	; 0x803f3e <buf_read>
+ 334:	23 31       	cpi	r18, 0x13	; 19
+ 336:	19 f4       	brne	.+6      	; 0x33e <__vector_8+0x46>
+ 338:	10 92 3e 3f 	sts	0x3F3E, r1	; 0x803f3e <buf_read>
+ 33c:	05 c0       	rjmp	.+10     	; 0x348 <__vector_8+0x50>
+	else buf_read++;			//ﾊﾞｯﾌｧを進める
+ 33e:	20 91 3e 3f 	lds	r18, 0x3F3E	; 0x803f3e <buf_read>
+ 342:	2f 5f       	subi	r18, 0xFF	; 255
+ 344:	20 93 3e 3f 	sts	0x3F3E, r18	; 0x803f3e <buf_read>
+
+	//ﾃﾞｭｰﾃｨを更新
+#if BTL==0				//ｼﾝｸﾞﾙ出力のとき
+	TCA0.SINGLE.CMP0BUF=PWM_STEP/2+data;	//正相を設定
+ 348:	88 50       	subi	r24, 0x08	; 8
+ 34a:	9f 4f       	sbci	r25, 0xFF	; 255
+ 34c:	80 93 38 0a 	sts	0x0A38, r24	; 0x800a38 <__RODATA_PM_OFFSET__+0x7f8a38>
+ 350:	90 93 39 0a 	sts	0x0A39, r25	; 0x800a39 <__RODATA_PM_OFFSET__+0x7f8a39>
+//DBG_S(TCA0.SINGLE.CMP0BUF);
+//DBG_S(TCA0.SINGLE.CMP1BUF);
+#endif
+//DBG_C(']');
+//DBS_L;
+}
+ 354:	ff 91       	pop	r31
+ 356:	ef 91       	pop	r30
+ 358:	9f 91       	pop	r25
+ 35a:	8f 91       	pop	r24
+ 35c:	2f 91       	pop	r18
+ 35e:	0f 90       	pop	r0
+ 360:	0f be       	out	0x3f, r0	; 63
+ 362:	0f 90       	pop	r0
+ 364:	1f 90       	pop	r1
+ 366:	18 95       	reti
+
+Disassembly of section .text.pwm_wait:
+
+000005d4 <pwm_wait>:
+//PWM周期を待つ
+//==============================================
+void pwm_wait(void)
+{
+
+	TCA0.SINGLE.INTFLAGS=0b00000001;	//TCA0ｵｰﾊﾞｰﾌﾛｰ割込みﾌﾗｸﾞをｸﾘｱ
+ 5d4:	81 e0       	ldi	r24, 0x01	; 1
+ 5d6:	80 93 0b 0a 	sts	0x0A0B, r24	; 0x800a0b <__RODATA_PM_OFFSET__+0x7f8a0b>
+	while(!(TCA0.SINGLE.INTFLAGS&0b00000001));
+ 5da:	80 91 0b 0a 	lds	r24, 0x0A0B	; 0x800a0b <__RODATA_PM_OFFSET__+0x7f8a0b>
+ 5de:	80 ff       	sbrs	r24, 0
+ 5e0:	fc cf       	rjmp	.-8      	; 0x5da <pwm_wait+0x6>
+						//PWM周期満了を待つ
+}
+ 5e2:	08 95       	ret
+
+Disassembly of section .text.CB_INIT:
+
+000001dc <CB_INIT>:
+//==============================================
+static void CB_INIT(void)
+{
+
+	//ｼｽﾃﾑ設定
+	ccp_write_io((void*)&(CLKCTRL.MCLKCTRLB),0);
+ 1dc:	60 e0       	ldi	r22, 0x00	; 0
+ 1de:	81 e6       	ldi	r24, 0x61	; 97
+ 1e0:	90 e0       	ldi	r25, 0x00	; 0
+ 1e2:	0d d2       	rcall	.+1050   	; 0x5fe <ccp_write_io>
+						//OSCﾌﾟﾘｽｹ無し(主ｸﾛｯｸ16MHz)
+						//　ﾋｭｰｽﾞで16MHzｸﾛｯｸを選択しておくこと
+	SLPCTRL.CTRLA=0b00000101;		//ﾊﾟﾜｰﾀﾞｳﾝﾓｰﾄﾞ､Sleep許可
+ 1e4:	85 e0       	ldi	r24, 0x05	; 5
+ 1e6:	80 93 50 00 	sts	0x0050, r24	; 0x800050 <__RODATA_PM_OFFSET__+0x7f8050>
+#endif
+#endif
+
+	//SPIﾎﾟｰﾄ設定
+#if VOICE_C+VOICE_S>0			//SPIを使うとき
+	SPI_SS_OUT;				//SSを出力ﾓｰﾄﾞ
+ 1ea:	e0 e0       	ldi	r30, 0x00	; 0
+ 1ec:	f4 e0       	ldi	r31, 0x04	; 4
+ 1ee:	82 e0       	ldi	r24, 0x02	; 2
+ 1f0:	81 83       	std	Z+1, r24	; 0x01
+	SPI_MISO_IN;				//MISOをﾌﾟﾙﾀﾞｳﾝ入力ﾓｰﾄﾞ
+ 1f2:	80 e8       	ldi	r24, 0x80	; 128
+ 1f4:	82 83       	std	Z+2, r24	; 0x02
+	SPI_SCK_OUT;				//SCKを出力ﾓｰﾄﾞ
+ 1f6:	94 e0       	ldi	r25, 0x04	; 4
+ 1f8:	91 83       	std	Z+1, r25	; 0x01
+	SPI_MOSI_OUT;				//MOSIを出力ﾓｰﾄﾞ
+ 1fa:	81 83       	std	Z+1, r24	; 0x01
+
+	//PWM(TCA0)設定
+#if BTL==2				//ﾌﾞﾘｯｼﾞ出力のとき
+	TCA0.SINGLE.PER=PWM_STEP+PWM_DB;	//PWM周期=32.125us+ﾃﾞｯﾄﾞﾊﾞﾝﾄﾞ
+#else					//ｼﾝｸﾞﾙ･ｺﾝﾌﾟﾘ･ﾌﾞﾚｰｷ出力のとき
+	TCA0.SINGLE.PER=PWM_STEP;		//PWM周期=32.125us
+ 1fc:	a0 e0       	ldi	r26, 0x00	; 0
+ 1fe:	ba e0       	ldi	r27, 0x0A	; 10
+ 200:	80 ef       	ldi	r24, 0xF0	; 240
+ 202:	91 e0       	ldi	r25, 0x01	; 1
+ 204:	96 96       	adiw	r26, 0x26	; 38
+ 206:	8d 93       	st	X+, r24
+ 208:	9c 93       	st	X, r25
+ 20a:	97 97       	sbiw	r26, 0x27	; 39
+#endif
+#ifdef PWM_SLOW				//PWMを極端に遅くするとき
+	TCA0.SINGLE.CTRLA=0b00001111;		//ｸﾛｯｸ分周1/1024(ﾃﾞﾊﾞｸﾞ用)､TCA許可
+#else
+	TCA0.SINGLE.CTRLA=0b00000001;		//ｸﾛｯｸ分周無し､TCA許可
+ 20c:	81 e0       	ldi	r24, 0x01	; 1
+ 20e:	8c 93       	st	X, r24
+#endif
+#if BTL==0				//ｼﾝｸﾞﾙ出力のとき
+	TCA0.SINGLE.CTRLB=0b00010011;		//正相(WO0)を出力､ｼﾝｸﾞﾙｽﾛｰﾌﾟ動作
+ 210:	93 e1       	ldi	r25, 0x13	; 19
+ 212:	11 96       	adiw	r26, 0x01	; 1
+ 214:	9c 93       	st	X, r25
+ 216:	11 97       	sbiw	r26, 0x01	; 1
+	((PORT_tn *)&PWM_F_PORT)->PINnCTRL[PWM_F_BIT]=0b10000000;
+						//正相を反転出力
+	((PORT_tn *)&PWM_R_PORT)->PINnCTRL[PWM_R_BIT]=0b10000000;
+						//逆相を反転出力
+#endif
+	TCA0.SINGLE.INTCTRL=0b00000001;		//ｵｰﾊﾞｰﾌﾛｰ割込み許可
+ 218:	1a 96       	adiw	r26, 0x0a	; 10
+ 21a:	8c 93       	st	X, r24
+
+	//PWMﾎﾟｰﾄを出力設定
+	PWM_F_PORT.DIRSET=(1<<PWM_F_BIT);	//正相を出力ﾓｰﾄﾞ
+ 21c:	88 e0       	ldi	r24, 0x08	; 8
+ 21e:	81 83       	std	Z+1, r24	; 0x01
+	PWM_R_PORT.DIRSET=(1<<PWM_R_BIT);	//逆相を出力ﾓｰﾄﾞ
+#endif
+
+	//ﾗﾝﾌﾟ上昇
+#if BTL==0				//ｼﾝｸﾞﾙ出力のとき
+	while(TCA0.SINGLE.CMP0BUF<PWM_STEP/2)	//PCMﾚﾍﾞﾙ0まで上昇させる
+ 220:	08 c0       	rjmp	.+16     	; 0x232 <CB_INIT+0x56>
+	{
+		TCA0.SINGLE.CMP0BUF++;		//DCをｲﾝｸﾘする
+ 222:	e0 e0       	ldi	r30, 0x00	; 0
+ 224:	fa e0       	ldi	r31, 0x0A	; 10
+ 226:	80 ad       	ldd	r24, Z+56	; 0x38
+ 228:	91 ad       	ldd	r25, Z+57	; 0x39
+ 22a:	01 96       	adiw	r24, 0x01	; 1
+ 22c:	80 af       	std	Z+56, r24	; 0x38
+ 22e:	91 af       	std	Z+57, r25	; 0x39
+		pwm_wait();			//ｻﾝﾌﾟﾘﾝｸﾞ周期を待つ
+ 230:	d1 d1       	rcall	.+930    	; 0x5d4 <pwm_wait>
+	PWM_R_PORT.DIRSET=(1<<PWM_R_BIT);	//逆相を出力ﾓｰﾄﾞ
+#endif
+
+	//ﾗﾝﾌﾟ上昇
+#if BTL==0				//ｼﾝｸﾞﾙ出力のとき
+	while(TCA0.SINGLE.CMP0BUF<PWM_STEP/2)	//PCMﾚﾍﾞﾙ0まで上昇させる
+ 232:	80 91 38 0a 	lds	r24, 0x0A38	; 0x800a38 <__RODATA_PM_OFFSET__+0x7f8a38>
+ 236:	90 91 39 0a 	lds	r25, 0x0A39	; 0x800a39 <__RODATA_PM_OFFSET__+0x7f8a39>
+ 23a:	88 3f       	cpi	r24, 0xF8	; 248
+ 23c:	91 05       	cpc	r25, r1
+ 23e:	88 f3       	brcs	.-30     	; 0x222 <CB_INIT+0x46>
+	}
+#endif
+//DBG_C('P');
+
+	//RTC設定
+	ccp_write_io((void*)&(CLKCTRL.OSC32KCTRLA),CLKCTRL_RUNSTDBY_bm);
+ 240:	62 e0       	ldi	r22, 0x02	; 2
+ 242:	88 e7       	ldi	r24, 0x78	; 120
+ 244:	90 e0       	ldi	r25, 0x00	; 0
+ 246:	db d1       	rcall	.+950    	; 0x5fe <ccp_write_io>
+						//32kOSCを常時稼働
+	RTC.CLKSEL=RTC_CLKSEL_INT1K_gc;		//ｸﾛｯｸ源は内部1kHzOSC
+ 248:	e0 e4       	ldi	r30, 0x40	; 64
+ 24a:	f1 e0       	ldi	r31, 0x01	; 1
+ 24c:	81 e0       	ldi	r24, 0x01	; 1
+ 24e:	87 83       	std	Z+7, r24	; 0x07
+	RTC.PITCTRLA=RTC_PERIOD_CYC32_gc|RTC_PITEN_bm;
+ 250:	91 e2       	ldi	r25, 0x21	; 33
+ 252:	90 8b       	std	Z+16, r25	; 0x10
+	void song_idx_dmy(void);		//song_idxのｴﾝﾄﾘ
+	song_idx_dmy();				//ﾀﾞﾐｰｺｰﾙする
+#endif
+
+	//ADC設定
+	ADC0.CTRLA=0b00000001;			//10ﾋﾞｯﾄ分解能､自由走行しない､ADC有効
+ 254:	e0 e0       	ldi	r30, 0x00	; 0
+ 256:	f6 e0       	ldi	r31, 0x06	; 6
+ 258:	80 83       	st	Z, r24
+	ADC0.CTRLC=0b00010011;			//基準電圧はVDD､ｸﾛｯｸは1/16
+ 25a:	83 e1       	ldi	r24, 0x13	; 19
+ 25c:	82 83       	std	Z+2, r24	; 0x02
+
+	//空きﾎﾟｰﾄをﾌﾟﾙｱｯﾌﾟ
+	PORTA.PIN0CTRL=0b00001000;
+ 25e:	e0 e0       	ldi	r30, 0x00	; 0
+ 260:	f4 e0       	ldi	r31, 0x04	; 4
+ 262:	88 e0       	ldi	r24, 0x08	; 8
+ 264:	80 8b       	std	Z+16, r24	; 0x10
+	PORTA.PIN1CTRL=0b00001000;
+ 266:	81 8b       	std	Z+17, r24	; 0x11
+	PORTA.PIN2CTRL=0b00001000;
+ 268:	82 8b       	std	Z+18, r24	; 0x12
+	PORTA.PIN3CTRL=0b00001000;
+ 26a:	83 8b       	std	Z+19, r24	; 0x13
+	PORTA.PIN4CTRL=0b00001000;
+ 26c:	84 8b       	std	Z+20, r24	; 0x14
+	PORTA.PIN5CTRL=0b00001000;
+ 26e:	85 8b       	std	Z+21, r24	; 0x15
+	PORTA.PIN6CTRL=0b00001000;
+ 270:	86 8b       	std	Z+22, r24	; 0x16
+	PORTA.PIN7CTRL=0b00001000;
+ 272:	87 8b       	std	Z+23, r24	; 0x17
+	PORTC.PIN2CTRL=0b00001000;
+	PORTC.PIN3CTRL=0b00001000;
+#endif
+
+	//ｱﾌﾟﾘの初期設定(LED設定はｱﾌﾟﾘの初期化で実施)
+	apl_init();
+ 274:	ce d1       	rcall	.+924    	; 0x612 <apl_init>
+
+	//動作開始
+	sei();					//割込み許可
+ 276:	78 94       	sei
+ 278:	08 95       	ret
+
+Disassembly of section .text.dev_pwm_stop:
+
+000004cc <dev_pwm_stop>:
+{
+
+//DBG_C('\n');
+//DBG_C('s');
+	//PWM割込み停止
+	TCA0.SINGLE.INTCTRL=0b00000000;		//ｵｰﾊﾞｰﾌﾛｰ割込み禁止
+ 4cc:	10 92 0a 0a 	sts	0x0A0A, r1	; 0x800a0a <__RODATA_PM_OFFSET__+0x7f8a0a>
+	pwm_wait();				//ｻﾝﾌﾟﾘﾝｸﾞ周期を待つ
+ 4d0:	81 d0       	rcall	.+258    	; 0x5d4 <pwm_wait>
+
+#if BTL==0				//ｼﾝｸﾞﾙ出力のとき
+//DBG_C('1');
+	while(TCA0.SINGLE.CMP0BUF)		//DCを0までﾗﾝﾌﾟ下降させる
+ 4d2:	08 c0       	rjmp	.+16     	; 0x4e4 <dev_pwm_stop+0x18>
+	{
+		TCA0.SINGLE.CMP0BUF--;		//DCをﾃﾞｸﾘする
+ 4d4:	e0 e0       	ldi	r30, 0x00	; 0
+ 4d6:	fa e0       	ldi	r31, 0x0A	; 10
+ 4d8:	80 ad       	ldd	r24, Z+56	; 0x38
+ 4da:	91 ad       	ldd	r25, Z+57	; 0x39
+ 4dc:	01 97       	sbiw	r24, 0x01	; 1
+ 4de:	80 af       	std	Z+56, r24	; 0x38
+ 4e0:	91 af       	std	Z+57, r25	; 0x39
+		pwm_wait();			//ｻﾝﾌﾟﾘﾝｸﾞ周期を待つ
+ 4e2:	78 d0       	rcall	.+240    	; 0x5d4 <pwm_wait>
+	TCA0.SINGLE.INTCTRL=0b00000000;		//ｵｰﾊﾞｰﾌﾛｰ割込み禁止
+	pwm_wait();				//ｻﾝﾌﾟﾘﾝｸﾞ周期を待つ
+
+#if BTL==0				//ｼﾝｸﾞﾙ出力のとき
+//DBG_C('1');
+	while(TCA0.SINGLE.CMP0BUF)		//DCを0までﾗﾝﾌﾟ下降させる
+ 4e4:	80 91 38 0a 	lds	r24, 0x0A38	; 0x800a38 <__RODATA_PM_OFFSET__+0x7f8a38>
+ 4e8:	90 91 39 0a 	lds	r25, 0x0A39	; 0x800a39 <__RODATA_PM_OFFSET__+0x7f8a39>
+ 4ec:	89 2b       	or	r24, r25
+ 4ee:	91 f7       	brne	.-28     	; 0x4d4 <dev_pwm_stop+0x8>
+						//逆相を非反転出力
+	pwm_wait();				//ｻﾝﾌﾟﾘﾝｸﾞ周期を待つ
+#endif
+#endif
+//DBG_C('6');
+}
+ 4f0:	08 95       	ret
+
+Disassembly of section .text.dev_pwm_start:
+
+000004f2 <dev_pwm_start>:
+
+//DBG_C('\n');
+//DBG_C('r');
+#if BTL==0				//ｼﾝｸﾞﾙ出力のとき
+//DBG_C('6');
+	while(TCA0.SINGLE.CMP0BUF++<PWM_STEP/2)
+ 4f2:	01 c0       	rjmp	.+2      	; 0x4f6 <dev_pwm_start+0x4>
+						//DCが50%になるまでｲﾝｸﾘする
+	{
+		pwm_wait();			//ｻﾝﾌﾟﾘﾝｸﾞ周期を待つ
+ 4f4:	6f d0       	rcall	.+222    	; 0x5d4 <pwm_wait>
+
+//DBG_C('\n');
+//DBG_C('r');
+#if BTL==0				//ｼﾝｸﾞﾙ出力のとき
+//DBG_C('6');
+	while(TCA0.SINGLE.CMP0BUF++<PWM_STEP/2)
+ 4f6:	e0 e0       	ldi	r30, 0x00	; 0
+ 4f8:	fa e0       	ldi	r31, 0x0A	; 10
+ 4fa:	80 ad       	ldd	r24, Z+56	; 0x38
+ 4fc:	91 ad       	ldd	r25, Z+57	; 0x39
+ 4fe:	9c 01       	movw	r18, r24
+ 500:	2f 5f       	subi	r18, 0xFF	; 255
+ 502:	3f 4f       	sbci	r19, 0xFF	; 255
+ 504:	20 af       	std	Z+56, r18	; 0x38
+ 506:	31 af       	std	Z+57, r19	; 0x39
+ 508:	88 3f       	cpi	r24, 0xF8	; 248
+ 50a:	91 05       	cpc	r25, r1
+ 50c:	98 f3       	brcs	.-26     	; 0x4f4 <dev_pwm_start+0x2>
+	((PORT_tn *)&PWM_R_PORT)->PINnCTRL[PWM_R_BIT]=0b10000000;
+						//逆相を反転出力
+#endif
+
+	//PWM割込み再開
+	TCA0.SINGLE.INTCTRL=0b00000001;		//ｵｰﾊﾞｰﾌﾛｰ割込み許可
+ 50e:	81 e0       	ldi	r24, 0x01	; 1
+ 510:	80 93 0a 0a 	sts	0x0A0A, r24	; 0x800a0a <__RODATA_PM_OFFSET__+0x7f8a0a>
+ 514:	08 95       	ret
+
+Disassembly of section .text.apl_sleep:
+
+00000432 <apl_sleep>:
+#ifdef	SLEEP_EN			//Sleep機能を実装するとき
+//==============================================
+//Sleep処理
+//==============================================
+static void apl_sleep(void)
+{
+ 432:	0f 93       	push	r16
+ 434:	1f 93       	push	r17
+ 436:	cf 93       	push	r28
+ 438:	df 93       	push	r29
+//DBG_C('\n');
+//DBG_C('<');
+	//ﾓｰﾀｰ停止;
+#ifdef MTR_BIT				//ﾓｰﾀｰ制御ﾎﾟｰﾄが実装されているとき
+    MTR_PORT.DIRSET=1<<MTR_BIT;     // MTR_BITを出力ポートに設定する
+ 43a:	c0 e0       	ldi	r28, 0x00	; 0
+ 43c:	d4 e0       	ldi	r29, 0x04	; 4
+ 43e:	80 e4       	ldi	r24, 0x40	; 64
+ 440:	89 83       	std	Y+1, r24	; 0x01
+//	MTR_PORT.OUTSET=1<<MTR_BIT;		//ﾓｰﾀｰを停止
+    MTR_PORT.OUTCLR=1<<MTR_BIT;		//ﾓｰﾀｰを停止（論理反転 YM)
+ 442:	8e 83       	std	Y+6, r24	; 0x06
+#endif
+
+#if VOICE_S>0
+	//W25をﾊﾟﾜｰﾀﾞｳﾝ
+//DBG_C('a');
+	W25_PWR_DOWN();				//W25をﾊﾟﾜｰﾀﾞｳﾝする
+ 444:	a2 d0       	rcall	.+324    	; 0x58a <W25_PWR_DOWN>
+#endif
+
+	//PWMを停止
+//DBG_C('b');
+	dev_pwm_stop();				//PWMを停止する
+ 446:	42 d0       	rcall	.+132    	; 0x4cc <dev_pwm_stop>
+	
+//トリガポートを割り込み禁止
+	TRG_PORT.DIRSET=1<<TRG_BIT;		//ﾄﾘｶﾞﾎﾟｰﾄを出力ﾓｰﾄﾞ
+ 448:	14 e0       	ldi	r17, 0x04	; 4
+ 44a:	19 83       	std	Y+1, r17	; 0x01
+((PORT_tn *)&TRG_PORT)->PINnCTRL[TRG_BIT]=0b00000000;
+ 44c:	1a 8a       	std	Y+18, r1	; 0x12
+//トリガポートの割り込みをクリア
+PORTA.INTFLAGS=0xff;			//ﾋﾟﾝ変化割込みﾌﾗｸﾞをｸﾘｱする
+ 44e:	0f ef       	ldi	r16, 0xFF	; 255
+ 450:	09 87       	std	Y+9, r16	; 0x09
+	
+//SLEEPDEEPﾓｰﾄﾞへ移行
+//DBG_C('i');
+DBG_SYNC();
+	TRG_PORT.DIRCLR=1<<TRG_BIT;		//ﾄﾘｶﾞﾎﾟｰﾄを入力ﾓｰﾄﾞ
+ 452:	1a 83       	std	Y+2, r17	; 0x02
+	((PORT_tn *)&TRG_PORT)->PINnCTRL[TRG_BIT]=0b00000001;
+ 454:	81 e0       	ldi	r24, 0x01	; 1
+ 456:	8a 8b       	std	Y+18, r24	; 0x12
+//	((PORT_tn *)&TRG_PORT)->PINnCTRL[TRG_BIT]=0b00001001;
+						//ﾄﾘｶﾞをﾌﾟﾙｱｯﾌﾟしない､割込みする(テストでプルアップ）
+	wait_ms(10);				//電圧安定時間を待つ
+ 458:	8a e0       	ldi	r24, 0x0A	; 10
+ 45a:	90 e0       	ldi	r25, 0x00	; 0
+ 45c:	7a d0       	rcall	.+244    	; 0x552 <wait_ms>
+	PORTA.INTFLAGS=0xff;			//ﾋﾟﾝ変化割込みﾌﾗｸﾞをｸﾘｱする
+ 45e:	09 87       	std	Y+9, r16	; 0x09
+#ifdef PORTB				//PORTBが実在するとき
+	PORTB.INTFLAGS=0xff;			//ﾋﾟﾝ変化割込みﾌﾗｸﾞをｸﾘｱする
+#endif
+	sleep_cpu();				//割込みが発生するまでSleepする
+ 460:	88 95       	sleep
+	((PORT_tn *)&TRG_PORT)->PINnCTRL[TRG_BIT]=0b00000000;
+ 462:	1a 8a       	std	Y+18, r1	; 0x12
+//	((PORT_tn *)&TRG_PORT)->PINnCTRL[TRG_BIT]=0b00001000;
+						//ﾄﾘｶﾞをﾌﾟﾙｱｯﾌﾟしない､割込みしない(テストでプルアップ）
+//	SPI_SCK_PORT.DIRSET=1<<SPI_SCK_BIT;	//SCKを出力ﾓｰﾄﾞ（YM 今回はSCKと共用ではないためコメントアウト）
+	SPI_SCK_PORT.DIRSET=1<<SPI_SCK_BIT;	//SCKを出力ﾓｰﾄﾞ（YM 0725はSCKと共用にするため復活）
+ 464:	19 83       	std	Y+1, r17	; 0x01
+//DBG_C('j');
+
+	//PWMを再稼働
+//DBG_C('l');
+	dev_pwm_start();			//PWMを開始する
+ 466:	45 d0       	rcall	.+138    	; 0x4f2 <dev_pwm_start>
+
+	//W25をﾊﾟﾜｰｱｯﾌﾟ
+#if	VOICE_S>0
+//DBG_C('m');
+	W25_PWR_UP();				//W25をﾊﾟﾜｰｱｯﾌﾟする
+ 468:	9d d0       	rcall	.+314    	; 0x5a4 <W25_PWR_UP>
+#endif
+//DBG_C('>');
+}
+ 46a:	df 91       	pop	r29
+ 46c:	cf 91       	pop	r28
+ 46e:	1f 91       	pop	r17
+ 470:	0f 91       	pop	r16
+ 472:	08 95       	ret
+
+Disassembly of section .text.CB_KOYUU:
+
+00000368 <CB_KOYUU>:
+#endif
+#if VOICE_C>0				//音声C再生を実装するとき
+	res|=voiceC.no;				//稼働しているときは稼働中の設定
+#endif
+#if VOICE_S>0				//音声S再生を実装するとき
+	res|=voiceS.no;				//稼働しているときは稼働中の設定
+ 368:	80 91 30 3f 	lds	r24, 0x3F30	; 0x803f30 <voiceS+0x8>
+#endif
+//DBG_B(res);
+	if(res)					//稼働しているときは
+ 36c:	88 23       	and	r24, r24
+ 36e:	21 f0       	breq	.+8      	; 0x378 <CB_KOYUU+0x10>
+	{
+		sleep_tmr=0;			//　Sleep時限をｸﾘｱする
+ 370:	10 92 3c 3f 	sts	0x3F3C, r1	; 0x803f3c <sleep_tmr.3101>
+ 374:	10 92 3d 3f 	sts	0x3F3D, r1	; 0x803f3d <sleep_tmr.3101+0x1>
+	}
+//DBG_C('X');
+//DBG_S(sleep_tmr);
+	if(++sleep_tmr<SLEEP_TMR/KOYUU_PR) return;
+ 378:	80 91 3c 3f 	lds	r24, 0x3F3C	; 0x803f3c <sleep_tmr.3101>
+ 37c:	90 91 3d 3f 	lds	r25, 0x3F3D	; 0x803f3d <sleep_tmr.3101+0x1>
+ 380:	01 96       	adiw	r24, 0x01	; 1
+ 382:	80 93 3c 3f 	sts	0x3F3C, r24	; 0x803f3c <sleep_tmr.3101>
+ 386:	90 93 3d 3f 	sts	0x3F3D, r25	; 0x803f3d <sleep_tmr.3101+0x1>
+ 38a:	8d 37       	cpi	r24, 0x7D	; 125
+ 38c:	91 05       	cpc	r25, r1
+ 38e:	f0 f0       	brcs	.+60     	; 0x3cc <CB_KOYUU+0x64>
+					//　Sleep時限が未満了のときは戻る
+	apl_sleep();			//　Sleepする
+ 390:	50 d0       	rcall	.+160    	; 0x432 <apl_sleep>
+	sleep_tmr=0;			//　Sleep時限をｸﾘｱする
+ 392:	10 92 3c 3f 	sts	0x3F3C, r1	; 0x803f3c <sleep_tmr.3101>
+ 396:	10 92 3d 3f 	sts	0x3F3D, r1	; 0x803f3d <sleep_tmr.3101+0x1>
+#if VOICE_C>0				//音声C再生を実装するとき
+	if(++onseiC>VOICEC_SU) onseiC=1;	//音声番号を進める
+	VOICEC_SEL(onseiC);			//再生開始する
+#endif
+#if VOICE_S>0				//音声S再生を実装するとき
+	if(++onseiS>VOICES_SU) onseiS=1;	//音声番号を進める
+ 39a:	80 91 3a 3f 	lds	r24, 0x3F3A	; 0x803f3a <onseiS.3103>
+ 39e:	90 91 3b 3f 	lds	r25, 0x3F3B	; 0x803f3b <onseiS.3103+0x1>
+ 3a2:	01 96       	adiw	r24, 0x01	; 1
+ 3a4:	80 93 3a 3f 	sts	0x3F3A, r24	; 0x803f3a <onseiS.3103>
+ 3a8:	90 93 3b 3f 	sts	0x3F3B, r25	; 0x803f3b <onseiS.3103+0x1>
+ 3ac:	04 97       	sbiw	r24, 0x04	; 4
+ 3ae:	30 f0       	brcs	.+12     	; 0x3bc <CB_KOYUU+0x54>
+ 3b0:	81 e0       	ldi	r24, 0x01	; 1
+ 3b2:	90 e0       	ldi	r25, 0x00	; 0
+ 3b4:	80 93 3a 3f 	sts	0x3F3A, r24	; 0x803f3a <onseiS.3103>
+ 3b8:	90 93 3b 3f 	sts	0x3F3B, r25	; 0x803f3b <onseiS.3103+0x1>
+	VOICES_SEL(onseiS);			//再生開始する
+ 3bc:	80 91 3a 3f 	lds	r24, 0x3F3A	; 0x803f3a <onseiS.3103>
+ 3c0:	90 91 3b 3f 	lds	r25, 0x3F3B	; 0x803f3b <onseiS.3103+0x1>
+ 3c4:	b7 de       	rcall	.-658    	; 0x134 <VOICES_SEL>
+#endif
+
+#ifdef MTR_BIT				//ﾓｰﾀｰ制御ﾎﾟｰﾄが実装されているとき
+//	MTR_PORT.OUTCLR=1<<MTR_BIT;		//ﾓｰﾀｰを稼働
+	MTR_PORT.OUTSET=1<<MTR_BIT;		//ﾓｰﾀｰを稼働(論理反転YM)
+ 3c6:	80 e4       	ldi	r24, 0x40	; 64
+ 3c8:	80 93 05 04 	sts	0x0405, r24	; 0x800405 <__RODATA_PM_OFFSET__+0x7f8405>
+ 3cc:	08 95       	ret
+
+Disassembly of section .text.main:
+
+0000008a <main>:
+{
+#if VOICE_C>0					//SDを使うとき
+	unsigned char n;
+#endif
+
+	wait_ms(10);				//電圧安定時間
+  8a:	8a e0       	ldi	r24, 0x0A	; 10
+  8c:	90 e0       	ldi	r25, 0x00	; 0
+  8e:	61 d2       	rcall	.+1218   	; 0x552 <wait_ms>
+	CB_INIT();				//ﾃﾞﾊﾞｲｽの初期設定
+  90:	a5 d0       	rcall	.+330    	; 0x1dc <CB_INIT>
+//==============================================
+//固有処理
+//==============================================
+//DBG_C('k');
+//DBG_S(kyotuu.ps);
+		if(!(kyotuu.ps--))		//固有処理のﾀｲﾐﾝｸﾞになったら
+  92:	e6 e3       	ldi	r30, 0x36	; 54
+  94:	ff e3       	ldi	r31, 0x3F	; 63
+  96:	80 81       	ld	r24, Z
+  98:	91 81       	ldd	r25, Z+1	; 0x01
+  9a:	9c 01       	movw	r18, r24
+  9c:	21 50       	subi	r18, 0x01	; 1
+  9e:	31 09       	sbc	r19, r1
+  a0:	20 83       	st	Z, r18
+  a2:	31 83       	std	Z+1, r19	; 0x01
+  a4:	89 2b       	or	r24, r25
+  a6:	39 f4       	brne	.+14     	; 0xb6 <main+0x2c>
+		{
+			kyotuu.ps=(unsigned long)KOYUU_PR*1000/PWM_PR-1;
+  a8:	87 e0       	ldi	r24, 0x07	; 7
+  aa:	94 e0       	ldi	r25, 0x04	; 4
+  ac:	80 93 36 3f 	sts	0x3F36, r24	; 0x803f36 <kyotuu>
+  b0:	90 93 37 3f 	sts	0x3F37, r25	; 0x803f37 <kyotuu+0x1>
+						//固有処理ﾌﾟﾘｽｹｰﾗを初期化
+			CB_KOYUU();		//固有処理(ｺｰﾙﾊﾞｯｸ関数)を呼出す
+  b4:	59 d1       	rcall	.+690    	; 0x368 <CB_KOYUU>
+
+
+//==============================================
+//出力事前処理
+//==============================================
+		kyotuu.pcm=0;			//PCM合算値をｸﾘｱしておく
+  b6:	10 92 38 3f 	sts	0x3F38, r1	; 0x803f38 <kyotuu+0x2>
+  ba:	10 92 39 3f 	sts	0x3F39, r1	; 0x803f39 <kyotuu+0x3>
+#if VOICE_S>0
+//==============================================
+//音声S再生処理
+//==============================================
+//DBG_C('s');
+		if(voiceS.no)			//再生中のとき
+  be:	80 91 30 3f 	lds	r24, 0x3F30	; 0x803f30 <voiceS+0x8>
+  c2:	90 91 31 3f 	lds	r25, 0x3F31	; 0x803f31 <voiceS+0x9>
+  c6:	89 2b       	or	r24, r25
+  c8:	c1 f0       	breq	.+48     	; 0xfa <main+0x70>
+		{
+			if(!(voiceS.ps--))	//再生処理のﾀｲﾐﾝｸﾞになったら
+  ca:	e8 e2       	ldi	r30, 0x28	; 40
+  cc:	ff e3       	ldi	r31, 0x3F	; 63
+  ce:	85 85       	ldd	r24, Z+13	; 0x0d
+  d0:	9f ef       	ldi	r25, 0xFF	; 255
+  d2:	98 0f       	add	r25, r24
+  d4:	95 87       	std	Z+13, r25	; 0x0d
+  d6:	81 11       	cpse	r24, r1
+  d8:	04 c0       	rjmp	.+8      	; 0xe2 <main+0x58>
+			{
+				voiceS.ps=voiceS.psn-1;
+  da:	84 85       	ldd	r24, Z+12	; 0x0c
+  dc:	81 50       	subi	r24, 0x01	; 1
+  de:	85 87       	std	Z+13, r24	; 0x0d
+						//演奏処理ﾌﾟﾘｽｹｰﾗを初期化
+				voiceS_exe();	//演奏処理を実行する
+  e0:	cc d0       	rcall	.+408    	; 0x27a <voiceS_exe>
+			}
+			kyotuu.pcm+=voiceS.pcm;	//PCM値を反映する
+  e2:	80 91 32 3f 	lds	r24, 0x3F32	; 0x803f32 <voiceS+0xa>
+  e6:	90 91 33 3f 	lds	r25, 0x3F33	; 0x803f33 <voiceS+0xb>
+  ea:	e6 e3       	ldi	r30, 0x36	; 54
+  ec:	ff e3       	ldi	r31, 0x3F	; 63
+  ee:	22 81       	ldd	r18, Z+2	; 0x02
+  f0:	33 81       	ldd	r19, Z+3	; 0x03
+  f2:	82 0f       	add	r24, r18
+  f4:	93 1f       	adc	r25, r19
+  f6:	82 83       	std	Z+2, r24	; 0x02
+  f8:	93 83       	std	Z+3, r25	; 0x03
+//==============================================
+//ﾊﾞｯﾌｧ書出し
+//==============================================
+//DBG_C('b');
+//DBG_S(kyotuu.pcm);
+		if(kyotuu.pcm>=(PWM_STEP+1)/2) kyotuu.pcm=(PWM_STEP+1)/2-1;
+  fa:	80 91 38 3f 	lds	r24, 0x3F38	; 0x803f38 <kyotuu+0x2>
+  fe:	90 91 39 3f 	lds	r25, 0x3F39	; 0x803f39 <kyotuu+0x3>
+ 102:	88 3f       	cpi	r24, 0xF8	; 248
+ 104:	91 05       	cpc	r25, r1
+ 106:	3c f0       	brlt	.+14     	; 0x116 <__DATA_REGION_LENGTH__+0x16>
+ 108:	87 ef       	ldi	r24, 0xF7	; 247
+ 10a:	90 e0       	ldi	r25, 0x00	; 0
+ 10c:	80 93 38 3f 	sts	0x3F38, r24	; 0x803f38 <kyotuu+0x2>
+ 110:	90 93 39 3f 	sts	0x3F39, r25	; 0x803f39 <kyotuu+0x3>
+ 114:	09 c0       	rjmp	.+18     	; 0x128 <__DATA_REGION_LENGTH__+0x28>
+						//有効な範囲に規制する
+		else if(kyotuu.pcm<=-PWM_STEP/2) kyotuu.pcm=-PWM_STEP/2+1;
+ 116:	89 30       	cpi	r24, 0x09	; 9
+ 118:	9f 4f       	sbci	r25, 0xFF	; 255
+ 11a:	34 f4       	brge	.+12     	; 0x128 <__DATA_REGION_LENGTH__+0x28>
+ 11c:	89 e0       	ldi	r24, 0x09	; 9
+ 11e:	9f ef       	ldi	r25, 0xFF	; 255
+ 120:	80 93 38 3f 	sts	0x3F38, r24	; 0x803f38 <kyotuu+0x2>
+ 124:	90 93 39 3f 	sts	0x3F39, r25	; 0x803f39 <kyotuu+0x3>
+		put_buf(kyotuu.pcm);		//PCM形式でﾊﾞｯﾌｧに出力する
+ 128:	80 91 38 3f 	lds	r24, 0x3F38	; 0x803f38 <kyotuu+0x2>
+ 12c:	90 91 39 3f 	lds	r25, 0x3F39	; 0x803f39 <kyotuu+0x3>
+ 130:	a1 d1       	rcall	.+834    	; 0x474 <put_buf>
+	}
+ 132:	af cf       	rjmp	.-162    	; 0x92 <main+0x8>
+
+Disassembly of section .text.__vector_7:
+
+00000516 <__vector_7>:
+
+//==============================================
+//PIT割込みﾊﾝﾄﾞﾗ
+//==============================================
+ISR(RTC_PIT_vect)
+{
+ 516:	1f 92       	push	r1
+ 518:	0f 92       	push	r0
+ 51a:	0f b6       	in	r0, 0x3f	; 63
+ 51c:	0f 92       	push	r0
+ 51e:	11 24       	eor	r1, r1
+ 520:	8f 93       	push	r24
+
+	RTC.PITINTFLAGS=RTC_PI_bm;		//PIT割込みﾌﾗｸﾞをｸﾘｱ
+ 522:	81 e0       	ldi	r24, 0x01	; 1
+ 524:	80 93 53 01 	sts	0x0153, r24	; 0x800153 <__RODATA_PM_OFFSET__+0x7f8153>
+}
+ 528:	8f 91       	pop	r24
+ 52a:	0f 90       	pop	r0
+ 52c:	0f be       	out	0x3f, r0	; 63
+ 52e:	0f 90       	pop	r0
+ 530:	1f 90       	pop	r1
+ 532:	18 95       	reti
+
+Disassembly of section .text.__vector_3:
+
+00000534 <__vector_3>:
+						
+//==============================================
+//ﾋﾟﾝ変化割込みﾊﾝﾄﾞﾗ
+//==============================================
+ISR(PORTA_PORT_vect)
+{
+ 534:	1f 92       	push	r1
+ 536:	0f 92       	push	r0
+ 538:	0f b6       	in	r0, 0x3f	; 63
+ 53a:	0f 92       	push	r0
+ 53c:	11 24       	eor	r1, r1
+ 53e:	8f 93       	push	r24
+	PORTA.INTFLAGS=0xff;			//ﾋﾟﾝ変化割込みﾌﾗｸﾞをｸﾘｱする
+ 540:	8f ef       	ldi	r24, 0xFF	; 255
+ 542:	80 93 09 04 	sts	0x0409, r24	; 0x800409 <__RODATA_PM_OFFSET__+0x7f8409>
+}
+ 546:	8f 91       	pop	r24
+ 548:	0f 90       	pop	r0
+ 54a:	0f be       	out	0x3f, r0	; 63
+ 54c:	0f 90       	pop	r0
+ 54e:	1f 90       	pop	r1
+ 550:	18 95       	reti
+
+Disassembly of section .text.libgcc.mul:
+
+000005f2 <__usmulhisi3>:
+ 5f2:	e4 df       	rcall	.-56     	; 0x5bc <__umulhisi3>
+
+000005f4 <__usmulhisi3_tail>:
+ 5f4:	b7 ff       	sbrs	r27, 7
+ 5f6:	08 95       	ret
+ 5f8:	82 1b       	sub	r24, r18
+ 5fa:	93 0b       	sbc	r25, r19
+ 5fc:	08 95       	ret
+
+Disassembly of section .text.libgcc.mul:
+
+000005bc <__umulhisi3>:
+ 5bc:	a2 9f       	mul	r26, r18
+ 5be:	b0 01       	movw	r22, r0
+ 5c0:	b3 9f       	mul	r27, r19
+ 5c2:	c0 01       	movw	r24, r0
+ 5c4:	a3 9f       	mul	r26, r19
+ 5c6:	01 d0       	rcall	.+2      	; 0x5ca <__umulhisi3+0xe>
+ 5c8:	b2 9f       	mul	r27, r18
+ 5ca:	70 0d       	add	r23, r0
+ 5cc:	81 1d       	adc	r24, r1
+ 5ce:	11 24       	eor	r1, r1
+ 5d0:	91 1d       	adc	r25, r1
+ 5d2:	08 95       	ret
+
+Disassembly of section .text.__dummy_fini:
+
+00000628 <_fini>:
+ 628:	08 95       	ret
+
+Disassembly of section .text.__dummy_funcs_on_exit:
+
+0000062a <__funcs_on_exit>:
+ 62a:	08 95       	ret
+
+Disassembly of section .text.__dummy_simulator_exit:
+
+0000062c <__simulator_exit>:
+ 62c:	08 95       	ret
+
+Disassembly of section .text.exit:
+
+000005e4 <exit>:
+ 5e4:	ec 01       	movw	r28, r24
+ 5e6:	21 d0       	rcall	.+66     	; 0x62a <__funcs_on_exit>
+ 5e8:	1f d0       	rcall	.+62     	; 0x628 <_fini>
+ 5ea:	ce 01       	movw	r24, r28
+ 5ec:	1f d0       	rcall	.+62     	; 0x62c <__simulator_exit>
+ 5ee:	ce 01       	movw	r24, r28
+ 5f0:	1e d0       	rcall	.+60     	; 0x62e <_Exit>
+
+Disassembly of section .text._Exit:
+
+0000062e <_Exit>:
+ 62e:	2b dd       	rcall	.-1450   	; 0x86 <_exit>
+
+Disassembly of section .text.avrlibc:
+
+000005fe <ccp_write_io>:
+ 5fe:	dc 01       	movw	r26, r24
+ 600:	28 ed       	ldi	r18, 0xD8	; 216
+ 602:	20 93 34 00 	sts	0x0034, r18	; 0x800034 <__RODATA_PM_OFFSET__+0x7f8034>
+ 606:	6c 93       	st	X, r22
+ 608:	08 95       	ret
