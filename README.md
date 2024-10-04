@@ -314,6 +314,12 @@ orgel_conf.h に各種設定がありますので、自分の環境に合わせ�
 演奏する音声データを変更してプログラムを書き換える方法についても、ブログに記載していますので、参照してください。   
 [【Part2】Sound Player基板V2の音声データの作成方法と特性検討](https://ameblo.jp/powpher/entry-12868913563.html)   
 
+## 使い方
+基板の端子は下記に示しています。
+
+[V2基板説明](https://github.com/user-attachments/assets/4ae1b704-3ac1-4445-b284-655c75480fdc)
+ <img src="https://github.com/user-attachments/assets/4ae1b704-3ac1-4445-b284-655c75480fdc" width="640">   
+
 
 
 
