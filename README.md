@@ -299,19 +299,19 @@ Audicityをつかってフォーマット変換する方法については、ブ
 大泉さんのWAV2HEXでも、WAVファイルのサンプル周波数変換と変換bit 8bit化の機能はありますが、  
 16kHzの倍数以外だと、変換誤差がでますので、注意してください。事前に変換することをお勧めします。
 
-## デバイスへのプログラム書き込み方法
-今回のプロジェクトは、ATMEL STUDIO 7.0で作成されています。
-アプリをインストールしたら、プロジェクトファイルはmy Document下に作られると思います。
-my Document → ATMEL STUDIO → 7.0 → プロジェクトファイルをコピーします。
-プロジェクトファイルの中にあるorgel_SW_402を開いて、orgel_SW_402.atslnをダブルクリックして起動します。
+## デバイスへのプログラム書き込み方法   
+今回のプロジェクトは、ATMEL STUDIO 7.0で作成されています。  
+アプリをインストールしたら、プロジェクトファイルはmy Document下に作られると思います。  
+my Document → ATMEL STUDIO → 7.0 → プロジェクトファイルをコピーします。  
+プロジェクトファイルの中にあるorgel_SW_402を開いて、orgel_SW_402.atslnをダブルクリックして起動します。  
 起動したら、右のSolution Explorerからmain.cをダブルクリックして開きます。  
  <img src="https://github.com/user-attachments/assets/4b8ee2ba-8c93-4c72-b56a-01a4cae7deb3" width="640">   
 
-他のファイルは、Solution ExplorerのDependenciesに入ってます。▽をポチッとして開いてください。
-orgel_conf.h に各種設定がありますので、自分の環境に合わせてここでパラメータを設定してください。  
- <img src="https://github.com/user-attachments/assets/824d828f-191e-4464-af83-77f35efcd514" width="640">   
+他のファイルは、Solution ExplorerのDependenciesに入ってます。▽をポチッとして開いてください。   
+orgel_conf.h に各種設定がありますので、自分の環境に合わせてここでパラメータを設定してください。   
+ <img src="https://github.com/user-attachments/assets/824d828f-191e-4464-af83-77f35efcd514" width="640">     
 
-演奏する音声データを変更してプログラムを書き換える方法についても、ブログに記載していますので、参照してください。
+演奏する音声データを変更してプログラムを書き換える方法についても、ブログに記載していますので、参照してください。   
 [【Part2】Sound Player基板V2の音声データの作成方法と特性検討](https://ameblo.jp/powpher/entry-12868913563.html)   
 
 
