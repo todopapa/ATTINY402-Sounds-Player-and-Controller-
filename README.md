@@ -311,6 +311,9 @@ my Document → ATMEL STUDIO → 7.0 → プロジェクトファイルをコピ
 orgel_conf.h に各種設定がありますので、自分の環境に合わせてここでパラメータを設定してください。   
  <img src="https://github.com/user-attachments/assets/824d828f-191e-4464-af83-77f35efcd514" width="640">     
 
+変更したら、上のBuild タブで Rebuild Solution を選んでください。エラーが出なければコンパイル完了です。  
+プロジェクトのフォルダ内のDebugフォルダの中にhexファイルが生成されるので、AVRDUDEかAVRDUDESSで書き込みます。  
+
 演奏する音声データを変更してプログラムを書き換える方法についても、ブログに記載していますので、参照してください。   
 [【Part2】Sound Player基板V2の音声データの作成方法と特性検討](https://ameblo.jp/powpher/entry-12868913563.html)   
 
