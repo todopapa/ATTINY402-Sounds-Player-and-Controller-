@@ -341,12 +341,6 @@ orgel_conf.h に各種設定がありますので、自分の環境に合わせ�
 ⓸ ピエゾマイクのアンプ回路を実装している場合、待機中の消費電流は3～4uAくらいになります。  
 
 ## 他のATTINY402開発参考資料
-pin change Interrupt  
-https://www.avrfreaks.net/s/topic/a5C3l000000UaC5EAK/t152923  
-
-Technoblogy New ATtiny Low Power  
-http://www.technoblogy.com/show?2RA3  
-
 New ATTINY コード記述方法　Direct Port Manipulation  
 https://github.com/SpenceKonde/megaTinyCore/blob/master/megaavr/extras/Ref_DirectPortManipulation.md  
 
