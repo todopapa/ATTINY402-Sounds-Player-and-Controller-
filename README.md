@@ -1,4 +1,4 @@
-# ATTINY402_Sounds_Player for toy PCB repair
+# ATTINY402_Sounds_Player for toy
 This is a new AVR ATTINY 402/202 series Sounds Player w/Piezo mic input and Motor controller  
 for toy gadgets PCBs replacement or a amusement
 
