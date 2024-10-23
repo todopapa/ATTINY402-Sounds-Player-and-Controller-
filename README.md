@@ -87,9 +87,9 @@ for toy gadgets PCBs replacement or a amusement
  高周波のPWM信号をそのまま入れるとICを壊す恐れがありますので、アンプの入力にCRローパスフィルタと音量調整のため   
  半固定ボリュームを入れました。  
  
- AB級アンプとしては、ISSIのIS31AP4881Aというスマホ用のものを使います。  
+ AB級アンプとしては、ISSIのIS31AP4991Aというスマホ用のものを使います。  
  一般的なTI LM4891MXというICもあります。どちらもSOP8でピン配も同じなのですが、Sleepさせる論理が逆なので要注意です。  
- IS31AP4881Aの場合は、SDBにモータ駆動信号 MOT_ONを接続します。LM4891MXを実装する場合は/CS信号を接続します。
+ IS31AP4991Aの場合は、SDBにモータ駆動信号 MOT_ONを接続します。LM4891MXを実装する場合は/CS信号を接続します。
 
  <img src="https://github.com/user-attachments/assets/844ad3c4-5525-4207-8fd6-67c08ce1b76e" width="400">    
 
